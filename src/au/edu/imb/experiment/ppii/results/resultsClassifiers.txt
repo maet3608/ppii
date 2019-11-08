@@ -1,0 +1,212 @@
+Loading network: data/SC_string.txt ...
+  Network: SC_string.txt
+  proteins: 3301  interactions pos:21096
+Annotate GO terms ...
+Create interaction set...
+  interactions: pos:0 neg:0
+Ontology biological_process,  size: 2913
+Ontology cellular_component,  size: 745
+Ontology molecular_function,  size: 1318
+SUMMARY: encoding, ontology, classifier
+  AUC|mean:std
+  0.91  0.01 :	 ULCA BP    J48C0.3
+  0.93  0.01 :	 ULCA BP    KNN5
+  0.92  0.00 :	 ULCA BP    LR
+  0.92  0.01 :	 ULCA BP    LR-7
+  0.87  0.01 :	 ULCA BP    LinSVMC+2
+  0.89  0.01 :	 ULCA BP    NB
+  0.93  0.00 :	 ULCA BP    PEGF1L-4
+  0.86  0.01 :	 ULCA BP    RBFC-1
+  0.95  0.01 :	 ULCA BP    RFI100
+  0.91  0.01 :	 ULCA CC    J48C0.3
+  0.93  0.01 :	 ULCA CC    KNN5
+  0.91  0.01 :	 ULCA CC    LR
+  0.91  0.01 :	 ULCA CC    LR-7
+  0.85  0.01 :	 ULCA CC    LinSVMC+2
+  0.88  0.01 :	 ULCA CC    NB
+  0.91  0.01 :	 ULCA CC    PEGF1L-4
+  0.82  0.01 :	 ULCA CC    RBFC-1
+  0.94  0.00 :	 ULCA CC    RFI100
+  0.86  0.01 :	 ULCA MF    J48C0.3
+  0.87  0.01 :	 ULCA MF    KNN5
+  0.85  0.01 :	 ULCA MF    LR
+  0.85  0.01 :	 ULCA MF    LR-7
+  0.76  0.01 :	 ULCA MF    LinSVMC+2
+  0.81  0.02 :	 ULCA MF    NB
+  0.85  0.01 :	 ULCA MF    PEGF1L-4
+  0.74  0.01 :	 ULCA MF    RBFC-1
+  0.89  0.01 :	 ULCA MF    RFI100
+SUMMARY: classifier
+  AUC|mean:std
+  0.89  0.09 :	 J48C0.3
+  0.91  0.11 :	 KNN5
+  0.89  0.12 :	 LR
+  0.89  0.13 :	 LR-7
+  0.83  0.18 :	 LinSVMC+2
+  0.86  0.13 :	 NB
+  0.90  0.14 :	 PEGF1L-4
+  0.81  0.19 :	 RBFC-1
+  0.92  0.11 :	 RFI100
+SUMMARY: encoding
+  AUC|mean:std
+  0.88  0.59 :	 ULCA
+SUMMARY: ontology
+  AUC|mean:std
+  0.91  0.19 :	 BP
+  0.90  0.25 :	 CC
+  0.83  0.31 :	 MF
+finished.
+
+
+Loading network: data/SC_string.txt ...
+  Network: SC_string.txt
+  proteins: 3301  interactions pos:21096
+Annotate GO terms ...
+Create interaction set...
+  interactions: pos:0 neg:0
+Ontology biological_process,  size: 2913
+Ontology cellular_component,  size: 745
+Ontology molecular_function,  size: 1318
+SUMMARY: encoding, ontology, classifier
+  AUC|mean:std
+  0.75  0.00 :	 AC   BP    J48C0.3
+  0.76  0.01 :	 AC   BP    KNN5
+  0.76  0.01 :	 AC   BP    LR
+  0.76  0.00 :	 AC   BP    LR-7
+  0.75  0.00 :	 AC   BP    LinSVMC+2
+  0.76  0.01 :	 AC   BP    NB
+  0.76  0.01 :	 AC   BP    PEGF1L-4
+  0.63  0.01 :	 AC   BP    RBFC-1
+  0.76  0.01 :	 AC   BP    RFI100
+  0.70  0.00 :	 AC   CC    J48C0.3
+  0.71  0.01 :	 AC   CC    KNN5
+  0.71  0.01 :	 AC   CC    LR
+  0.71  0.01 :	 AC   CC    LR-7
+  0.70  0.01 :	 AC   CC    LinSVMC+2
+  0.71  0.01 :	 AC   CC    NB
+  0.71  0.01 :	 AC   CC    PEGF1L-4
+  0.58  0.01 :	 AC   CC    RBFC-1
+  0.71  0.01 :	 AC   CC    RFI100
+  0.71  0.00 :	 AC   MF    J48C0.3
+  0.72  0.01 :	 AC   MF    KNN5
+  0.72  0.00 :	 AC   MF    LR
+  0.72  0.00 :	 AC   MF    LR-7
+  0.71  0.01 :	 AC   MF    LinSVMC+2
+  0.70  0.01 :	 AC   MF    NB
+  0.72  0.01 :	 AC   MF    PEGF1L-4
+  0.64  0.01 :	 AC   MF    RBFC-1
+  0.72  0.01 :	 AC   MF    RFI100
+SUMMARY: classifier
+  AUC|mean:std
+  0.72  0.09 :	 J48C0.3
+  0.73  0.08 :	 KNN5
+  0.73  0.08 :	 LR
+  0.73  0.08 :	 LR-7
+  0.72  0.09 :	 LinSVMC+2
+  0.72  0.10 :	 NB
+  0.73  0.08 :	 PEGF1L-4
+  0.62  0.11 :	 RBFC-1
+  0.73  0.08 :	 RFI100
+SUMMARY: encoding
+  AUC|mean:std
+  0.71  0.48 :	 AC
+SUMMARY: ontology
+  AUC|mean:std
+  0.74  0.28 :	 BP
+  0.69  0.27 :	 CC
+  0.71  0.15 :	 MF
+finished.
+
+
+
+
+Loading network: data/SC_park.txt ...
+  Network: SC_park.txt
+  proteins: 2152  interactions pos:3844
+Annotate GO terms ...
+Create interaction set...
+  interactions: pos:0 neg:0
+Ontology biological_process,  size: 2650
+Ontology cellular_component,  size: 713
+Ontology molecular_function,  size: 1081
+
+SUMMARY: encoding, ontology, classifier
+  AUC|mean:std
+  0.72  0.05 :	 AC   BP    J48C0.3
+  0.74  0.04 :	 AC   BP    KNN5
+  0.72  0.04 :	 AC   BP    LR
+  0.72  0.05 :	 AC   BP    LR-7
+  0.73  0.06 :	 AC   BP    LinSVMC+2
+  0.74  0.06 :	 AC   BP    NB
+  0.74  0.03 :	 AC   BP    PEGF1L-4
+  0.53  0.09 :	 AC   BP    RBFC-1
+  0.74  0.04 :	 AC   BP    RFI100
+  0.71  0.04 :	 AC   CC    J48C0.3
+  0.72  0.05 :	 AC   CC    KNN5
+  0.72  0.03 :	 AC   CC    LR
+  0.72  0.04 :	 AC   CC    LR-7
+  0.71  0.03 :	 AC   CC    LinSVMC+2
+  0.73  0.04 :	 AC   CC    NB
+  0.73  0.03 :	 AC   CC    PEGF1L-4
+  0.50  0.00 :	 AC   CC    RBFC-1
+  0.73  0.06 :	 AC   CC    RFI100
+  0.62  0.03 :	 AC   MF    J48C0.3
+  0.63  0.04 :	 AC   MF    KNN5
+  0.64  0.04 :	 AC   MF    LR
+  0.64  0.05 :	 AC   MF    LR-7
+  0.62  0.02 :	 AC   MF    LinSVMC+2
+  0.64  0.04 :	 AC   MF    NB
+  0.64  0.03 :	 AC   MF    PEGF1L-4
+  0.50  0.00 :	 AC   MF    RBFC-1
+  0.64  0.05 :	 AC   MF    RFI100
+  0.80  0.05 :	 ULCA BP    J48C0.3
+  0.86  0.04 :	 ULCA BP    KNN5
+  0.80  0.05 :	 ULCA BP    LR
+  0.79  0.07 :	 ULCA BP    LR-7
+  0.79  0.05 :	 ULCA BP    LinSVMC+2
+  0.84  0.04 :	 ULCA BP    NB
+  0.88  0.03 :	 ULCA BP    PEGF1L-4
+  0.79  0.03 :	 ULCA BP    RBFC-1
+  0.89  0.04 :	 ULCA BP    RFI100
+  0.83  0.05 :	 ULCA CC    J48C0.3
+  0.85  0.04 :	 ULCA CC    KNN5
+  0.84  0.07 :	 ULCA CC    LR
+  0.85  0.05 :	 ULCA CC    LR-7
+  0.78  0.05 :	 ULCA CC    LinSVMC+2
+  0.82  0.04 :	 ULCA CC    NB
+  0.86  0.05 :	 ULCA CC    PEGF1L-4
+  0.74  0.04 :	 ULCA CC    RBFC-1
+  0.86  0.04 :	 ULCA CC    RFI100
+  0.72  0.06 :	 ULCA MF    J48C0.3
+  0.74  0.06 :	 ULCA MF    KNN5
+  0.73  0.08 :	 ULCA MF    LR
+  0.73  0.05 :	 ULCA MF    LR-7
+  0.69  0.05 :	 ULCA MF    LinSVMC+2
+  0.72  0.05 :	 ULCA MF    NB
+  0.75  0.04 :	 ULCA MF    PEGF1L-4
+  0.66  0.04 :	 ULCA MF    RBFC-1
+  0.77  0.05 :	 ULCA MF    RFI100
+SUMMARY: classifier
+  AUC|mean:std
+  0.73  0.53 :	 J48C0.3
+  0.76  0.62 :	 KNN5
+  0.74  0.52 :	 LR
+  0.74  0.51 :	 LR-7
+  0.72  0.46 :	 LinSVMC+2
+  0.75  0.53 :	 NB
+  0.77  0.62 :	 PEGF1L-4
+  0.62  0.92 :	 RBFC-1
+  0.77  0.67 :	 RFI100
+SUMMARY: encoding
+  AUC|mean:std
+  0.68  1.20 :	 AC
+  0.79  1.02 :	 ULCA
+SUMMARY: ontology
+  AUC|mean:std
+  0.77  1.08 :	 BP
+  0.76  1.18 :	 CC
+  0.67  0.88 :	 MF
+finished.
+
+
+

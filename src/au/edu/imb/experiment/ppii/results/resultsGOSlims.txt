@@ -1,0 +1,672 @@
+
+
+
+Loading network...
+  Network: SC_park.txt
+  proteins: 2152  interactions pos:3844
+Create interaction set...
+  interactions: pos:3844 neg:3844
+SUMMARY: annotator, encoding, ontology, classifier
+  AUC|mean:std
+  0.75  0.04 :	 ALL      AC   BP    NB
+  0.73  0.05 :	 ALL      AC   CC    NB
+  0.65  0.04 :	 ALL      AC   MF    NB
+  0.84  0.04 :	 ALL      ULCA BP    NB
+  0.83  0.03 :	 ALL      ULCA CC    NB
+  0.72  0.05 :	 ALL      ULCA MF    NB
+  0.80  0.05 :	 SLIM_GEN AC   BP    NB
+  0.76  0.04 :	 SLIM_GEN AC   CC    NB
+  0.69  0.06 :	 SLIM_GEN AC   MF    NB
+  0.79  0.04 :	 SLIM_GEN ULCA BP    NB
+  0.78  0.07 :	 SLIM_GEN ULCA CC    NB
+  0.68  0.06 :	 SLIM_GEN ULCA MF    NB
+  0.74  0.05 :	 SLIM_GOA AC   BP    NB
+  0.72  0.04 :	 SLIM_GOA AC   CC    NB
+  0.68  0.04 :	 SLIM_GOA AC   MF    NB
+  0.73  0.04 :	 SLIM_GOA ULCA BP    NB
+  0.70  0.03 :	 SLIM_GOA ULCA CC    NB
+  0.64  0.10 :	 SLIM_GOA ULCA MF    NB
+  0.82  0.04 :	 SLIM_PIR AC   BP    NB
+  0.79  0.04 :	 SLIM_PIR AC   CC    NB
+  0.68  0.05 :	 SLIM_PIR AC   MF    NB
+  0.80  0.06 :	 SLIM_PIR ULCA BP    NB
+  0.78  0.05 :	 SLIM_PIR ULCA CC    NB
+  0.64  0.08 :	 SLIM_PIR ULCA MF    NB
+  0.81  0.05 :	 SLIM_SC  AC   BP    NB
+  0.77  0.05 :	 SLIM_SC  AC   CC    NB
+  0.69  0.06 :	 SLIM_SC  AC   MF    NB
+  0.79  0.05 :	 SLIM_SC  ULCA BP    NB
+  0.75  0.05 :	 SLIM_SC  ULCA CC    NB
+  0.68  0.05 :	 SLIM_SC  ULCA MF    NB
+SUMMARY: annotator, encoding
+  AUC|mean:std
+  0.71  0.26 :	 ALL      AC
+  0.80  0.31 :	 ALL      ULCA
+  0.75  0.24 :	 SLIM_GEN AC
+  0.75  0.28 :	 SLIM_GEN ULCA
+  0.71  0.17 :	 SLIM_GOA AC
+  0.69  0.23 :	 SLIM_GOA ULCA
+  0.76  0.34 :	 SLIM_PIR AC
+  0.74  0.40 :	 SLIM_PIR ULCA
+  0.76  0.29 :	 SLIM_SC  AC
+  0.74  0.26 :	 SLIM_SC  ULCA
+SUMMARY: annotator
+  AUC|mean:std
+  0.75  0.53 :	 ALL
+  0.75  0.37 :	 SLIM_GEN
+  0.70  0.30 :	 SLIM_GOA
+  0.75  0.53 :	 SLIM_PIR
+  0.75  0.40 :	 SLIM_SC
+SUMMARY: classifier
+  AUC|mean:std
+  0.74  1.03 :	 NB
+SUMMARY: encoding
+  AUC|mean:std
+  0.74  0.65 :	 AC
+  0.74  0.79 :	 ULCA
+SUMMARY: ontology
+  AUC|mean:std
+  0.79  0.37 :	 BP
+  0.76  0.39 :	 CC
+  0.67  0.31 :	 MF
+finished.
+
+
+Loading network...
+  Network: SC_string.txt
+  proteins: 3301  interactions pos:21096
+Create interaction set...
+  interactions: pos:21096 neg:21096
+running...
+SUMMARY: annotator, encoding, ontology, classifier
+  AUC|mean:std
+  0.76  0.02 :     ALL      AC   BP    NB
+  0.71  0.02 :     ALL      AC   CC    NB
+  0.70  0.02 :     ALL      AC   MF    NB
+  0.89  0.02 :     ALL      ULCA BP    NB
+  0.88  0.01 :     ALL      ULCA CC    NB
+  0.81  0.02 :     ALL      ULCA MF    NB
+  0.82  0.02 :     SLIM_GEN AC   BP    NB
+  0.82  0.02 :     SLIM_GEN AC   CC    NB
+  0.73  0.03 :     SLIM_GEN AC   MF    NB
+  0.83  0.02 :     SLIM_GEN ULCA BP    NB
+  0.84  0.02 :     SLIM_GEN ULCA CC    NB
+  0.76  0.03 :     SLIM_GEN ULCA MF    NB
+  0.76  0.03 :     SLIM_GOA AC   BP    NB
+  0.66  0.02 :     SLIM_GOA AC   CC    NB
+  0.73  0.02 :     SLIM_GOA AC   MF    NB
+  0.74  0.02 :     SLIM_GOA ULCA BP    NB
+  0.70  0.03 :     SLIM_GOA ULCA CC    NB
+  0.75  0.02 :     SLIM_GOA ULCA MF    NB
+  0.84  0.01 :     SLIM_PIR AC   BP    NB
+  0.74  0.01 :     SLIM_PIR AC   CC    NB
+  0.73  0.03 :     SLIM_PIR AC   MF    NB
+  0.84  0.01 :     SLIM_PIR ULCA BP    NB
+  0.84  0.02 :     SLIM_PIR ULCA CC    NB
+  0.75  0.01 :     SLIM_PIR ULCA MF    NB
+  0.85  0.02 :     SLIM_SC  AC   BP    NB
+  0.80  0.02 :     SLIM_SC  AC   CC    NB
+  0.73  0.02 :     SLIM_SC  AC   MF    NB
+  0.84  0.02 :     SLIM_SC  ULCA BP    NB
+  0.82  0.03 :     SLIM_SC  ULCA CC    NB
+  0.77  0.02 :     SLIM_SC  ULCA MF    NB
+SUMMARY: annotator, encoding
+  AUC|mean:std
+  0.72  0.14 :     ALL      AC
+  0.86  0.19 :     ALL      ULCA
+  0.79  0.23 :     SLIM_GEN AC
+  0.81  0.20 :     SLIM_GEN ULCA
+  0.72  0.23 :     SLIM_GOA AC
+  0.73  0.13 :     SLIM_GOA ULCA
+  0.77  0.27 :     SLIM_PIR AC
+  0.81  0.24 :     SLIM_PIR ULCA
+  0.79  0.26 :     SLIM_SC  AC
+  0.81  0.17 :     SLIM_SC  ULCA
+SUMMARY: annotator
+  AUC|mean:std
+  0.79  0.58 :     ALL
+  0.80  0.31 :     SLIM_GEN
+  0.72  0.27 :     SLIM_GOA
+  0.79  0.39 :     SLIM_PIR
+  0.80  0.32 :     SLIM_SC
+SUMMARY: classifier
+  AUC|mean:std
+  0.78  1.01 :     NB
+SUMMARY: encoding
+  AUC|mean:std
+  0.76  0.65 :     AC
+  0.80  0.67 :     ULCA
+SUMMARY: ontology
+  AUC|mean:std
+  0.82  0.47 :     BP
+  0.78  0.69 :     CC
+  0.75  0.28 :     MF
+finished.
+
+
+Loading network...
+  Network: SC_string.txt
+  proteins: 3301  interactions pos:21096
+Create interaction set...
+  interactions: pos:0 neg:0
+SUMMARY: annotator, encoding, ontology, classifier
+  AUC|mean:std
+  0.76  0.02 :     ALL      AC   BP    NB
+  0.71  0.02 :     ALL      AC   CC    NB
+  0.70  0.02 :     ALL      AC   MF    NB
+  0.89  0.01 :     ALL      ULCA BP    NB
+  0.88  0.01 :     ALL      ULCA CC    NB
+  0.81  0.02 :     ALL      ULCA MF    NB
+  0.82  0.02 :     SLIM_GEN AC   BP    NB
+  0.82  0.02 :     SLIM_GEN AC   CC    NB
+  0.73  0.03 :     SLIM_GEN AC   MF    NB
+  0.83  0.01 :     SLIM_GEN ULCA BP    NB
+  0.84  0.02 :     SLIM_GEN ULCA CC    NB
+  0.76  0.01 :     SLIM_GEN ULCA MF    NB
+  0.76  0.02 :     SLIM_GOA AC   BP    NB
+  0.66  0.02 :     SLIM_GOA AC   CC    NB
+  0.73  0.01 :     SLIM_GOA AC   MF    NB
+  0.74  0.03 :     SLIM_GOA ULCA BP    NB
+  0.70  0.03 :     SLIM_GOA ULCA CC    NB
+  0.75  0.02 :     SLIM_GOA ULCA MF    NB
+  0.84  0.03 :     SLIM_PIR AC   BP    NB
+  0.74  0.01 :     SLIM_PIR AC   CC    NB
+  0.73  0.02 :     SLIM_PIR AC   MF    NB
+  0.84  0.02 :     SLIM_PIR ULCA BP    NB
+  0.84  0.01 :     SLIM_PIR ULCA CC    NB
+  0.75  0.02 :     SLIM_PIR ULCA MF    NB
+  0.83  0.01 :     SLIM_PPI  AC   BP    NB
+  0.72  0.02 :     SLIM_PPI  AC   CC    NB
+  0.69  0.02 :     SLIM_PPI  AC   MF    NB
+  0.83  0.02 :     SLIM_PPI  ULCA BP    NB
+  0.79  0.01 :     SLIM_PPI  ULCA CC    NB
+  0.74  0.02 :     SLIM_PPI  ULCA MF    NB
+  0.85  0.01 :     SLIM_SC  AC   BP    NB
+  0.80  0.01 :     SLIM_SC  AC   CC    NB
+  0.73  0.03 :     SLIM_SC  AC   MF    NB
+  0.84  0.02 :     SLIM_SC  ULCA BP    NB
+  0.82  0.02 :     SLIM_SC  ULCA CC    NB
+  0.77  0.02 :     SLIM_SC  ULCA MF    NB
+SUMMARY: annotator, encoding
+  AUC|mean:std
+  0.72  0.14 :     ALL      AC
+  0.86  0.19 :     ALL      ULCA
+  0.79  0.23 :     SLIM_GEN AC
+  0.81  0.20 :     SLIM_GEN ULCA
+  0.72  0.23 :     SLIM_GOA AC
+  0.73  0.14 :     SLIM_GOA ULCA
+  0.77  0.27 :     SLIM_PIR AC
+  0.81  0.24 :     SLIM_PIR ULCA
+  0.75  0.34 :     SLIM_PPI  AC
+  0.79  0.21 :     SLIM_PPI  ULCA
+  0.79  0.26 :     SLIM_SC  AC
+  0.81  0.17 :     SLIM_SC  ULCA
+SUMMARY: annotator, ontology
+  AUC|mean:std
+  0.82  0.30 :     ALL      BP
+  0.79  0.37 :     ALL      CC
+  0.76  0.25 :     ALL      MF
+  0.82  0.03 :     SLIM_GEN BP
+  0.83  0.05 :     SLIM_GEN CC
+  0.74  0.07 :     SLIM_GEN MF
+  0.75  0.06 :     SLIM_GOA BP
+  0.68  0.09 :     SLIM_GOA CC
+  0.74  0.05 :     SLIM_GOA MF
+  0.84  0.03 :     SLIM_PIR BP
+  0.79  0.21 :     SLIM_PIR CC
+  0.74  0.04 :     SLIM_PIR MF
+  0.83  0.03 :     SLIM_PPI  BP
+  0.75  0.16 :     SLIM_PPI  CC
+  0.71  0.12 :     SLIM_PPI  MF
+  0.84  0.03 :     SLIM_SC  BP
+  0.81  0.04 :     SLIM_SC  CC
+  0.75  0.09 :     SLIM_SC  MF
+SUMMARY: annotator
+  AUC|mean:std
+  0.79  0.58 :     ALL
+  0.80  0.31 :     SLIM_GEN
+  0.72  0.27 :     SLIM_GOA
+  0.79  0.39 :     SLIM_PIR
+  0.77  0.43 :     SLIM_PPI
+  0.80  0.32 :     SLIM_SC
+SUMMARY: classifier
+  AUC|mean:std
+  0.78  1.10 :     NB
+SUMMARY: encoding
+  AUC|mean:std
+  0.76  0.74 :     AC
+  0.80  0.71 :     ULCA
+SUMMARY: ontology
+  AUC|mean:std
+  0.82  0.47 :     BP
+  0.78  0.72 :     CC
+  0.74  0.33 :     MF
+finished.
+
+
+Loading network...
+  Network: SC_string.txt
+  proteins: 3301  interactions pos:21096
+Create interaction set...
+  interactions: pos:0 neg:0
+running...
+GOAnnotator:
+running...
+   0.0
+Ontology cellular_component,  size: 57
+   1.7
+Ontology molecular_function,  size: 58
+   3.3
+Ontology biological_process,  size: 83
+   5.0
+Ontology cellular_component,  size: 57
+   6.7
+Ontology molecular_function,  size: 58
+   8.3
+Ontology biological_process,  size: 83
+  10.0
+Ontology cellular_component,  size: 57
+  11.7
+Ontology molecular_function,  size: 58
+  13.3
+Ontology biological_process,  size: 83
+  15.0
+Ontology cellular_component,  size: 57
+  16.7
+Ontology molecular_function,  size: 58
+  18.3
+Ontology biological_process,  size: 83
+  20.0
+Ontology cellular_component,  size: 57
+  21.7
+Ontology molecular_function,  size: 58
+  23.3
+Ontology biological_process,  size: 83
+  25.0
+Ontology cellular_component,  size: 57
+  26.7
+Ontology molecular_function,  size: 58
+  28.3
+Ontology biological_process,  size: 83
+  30.0
+Ontology cellular_component,  size: 57
+  31.7
+Ontology molecular_function,  size: 58
+  33.3
+Ontology biological_process,  size: 83
+  35.0
+Ontology cellular_component,  size: 57
+  36.7
+Ontology molecular_function,  size: 58
+  38.3
+Ontology biological_process,  size: 83
+  40.0
+Ontology cellular_component,  size: 57
+  41.7
+Ontology molecular_function,  size: 58
+  43.3
+Ontology biological_process,  size: 83
+  45.0
+Ontology cellular_component,  size: 57
+  46.7
+Ontology molecular_function,  size: 58
+  48.3
+Ontology biological_process,  size: 83
+  50.0
+Ontology cellular_component,  size: 745
+  51.7
+Ontology molecular_function,  size: 1318
+  53.3
+Ontology biological_process,  size: 2913
+  55.0
+Ontology cellular_component,  size: 745
+  56.7
+Ontology molecular_function,  size: 1318
+  58.3
+Ontology biological_process,  size: 2913
+  60.0
+Ontology cellular_component,  size: 745
+  61.7
+Ontology molecular_function,  size: 1318
+  63.3
+Ontology biological_process,  size: 2913
+  65.0
+Ontology cellular_component,  size: 745
+  66.7
+Ontology molecular_function,  size: 1318
+  68.3
+Ontology biological_process,  size: 2913
+  70.0
+Ontology cellular_component,  size: 745
+  71.7
+Ontology molecular_function,  size: 1318
+  73.3
+Ontology biological_process,  size: 2913
+  75.0
+Ontology cellular_component,  size: 745
+  76.7
+Ontology molecular_function,  size: 1318
+  78.3
+Ontology biological_process,  size: 2913
+  80.0
+Ontology cellular_component,  size: 745
+  81.7
+Ontology molecular_function,  size: 1318
+  83.3
+Ontology biological_process,  size: 2913
+  85.0
+Ontology cellular_component,  size: 745
+  86.7
+Ontology molecular_function,  size: 1318
+  88.3
+Ontology biological_process,  size: 2913
+  90.0
+Ontology cellular_component,  size: 745
+  91.7
+Ontology molecular_function,  size: 1318
+  93.3
+Ontology biological_process,  size: 2913
+  95.0
+Ontology cellular_component,  size: 745
+  96.7
+Ontology molecular_function,  size: 1318
+  98.3
+Ontology biological_process,  size: 2913
+finished.
+
+
+SUMMARY: annotator, encoding, ontology, classifier
+  AUC|mean:std
+  0.78  0.02 :	 ALL      AA   BP    NB
+  0.77  0.02 :	 ALL      AA   CC    NB
+  0.77  0.02 :	 ALL      AA   MF    NB
+  0.76  0.02 :	 ALL      AC   BP    NB
+  0.71  0.01 :	 ALL      AC   CC    NB
+  0.70  0.02 :	 ALL      AC   MF    NB
+  0.81  0.01 :	 ALL      ACA  BP    NB
+  0.83  0.01 :	 ALL      ACA  CC    NB
+  0.76  0.02 :	 ALL      ACA  MF    NB
+  0.80  0.02 :	 ALL      AL   BP    NB
+  0.80  0.03 :	 ALL      AL   CC    NB
+  0.79  0.02 :	 ALL      AL   MF    NB
+  0.87  0.01 :	 ALL      LCA  BP    NB
+  0.85  0.02 :	 ALL      LCA  CC    NB
+  0.81  0.02 :	 ALL      LCA  MF    NB
+  0.88  0.01 :	 ALL      OLCA BP    NB
+  0.86  0.02 :	 ALL      OLCA CC    NB
+  0.77  0.02 :	 ALL      OLCA MF    NB
+  0.81  0.02 :	 ALL      SPA  BP    NB
+  0.77  0.02 :	 ALL      SPA  CC    NB
+  0.77  0.02 :	 ALL      SPA  MF    NB
+  0.81  0.02 :	 ALL      SPS  BP    NB
+  0.80  0.02 :	 ALL      SPS  CC    NB
+  0.78  0.03 :	 ALL      SPS  MF    NB
+  0.89  0.01 :	 ALL      ULCA BP    NB
+  0.88  0.01 :	 ALL      ULCA CC    NB
+  0.81  0.03 :	 ALL      ULCA MF    NB
+  0.84  0.01 :	 ALL      WLCA BP    NB
+  0.86  0.02 :	 ALL      WLCA CC    NB
+  0.77  0.02 :	 ALL      WLCA MF    NB
+  0.73  0.03 :	 SLIM_GEN AA   BP    NB
+  0.73  0.02 :	 SLIM_GEN AA   CC    NB
+  0.72  0.03 :	 SLIM_GEN AA   MF    NB
+  0.82  0.02 :	 SLIM_GEN AC   BP    NB
+  0.82  0.01 :	 SLIM_GEN AC   CC    NB
+  0.73  0.01 :	 SLIM_GEN AC   MF    NB
+  0.76  0.02 :	 SLIM_GEN ACA  BP    NB
+  0.80  0.03 :	 SLIM_GEN ACA  CC    NB
+  0.74  0.03 :	 SLIM_GEN ACA  MF    NB
+  0.76  0.02 :	 SLIM_GEN AL   BP    NB
+  0.74  0.02 :	 SLIM_GEN AL   CC    NB
+  0.73  0.02 :	 SLIM_GEN AL   MF    NB
+  0.82  0.02 :	 SLIM_GEN LCA  BP    NB
+  0.82  0.02 :	 SLIM_GEN LCA  CC    NB
+  0.74  0.02 :	 SLIM_GEN LCA  MF    NB
+  0.82  0.03 :	 SLIM_GEN OLCA BP    NB
+  0.83  0.02 :	 SLIM_GEN OLCA CC    NB
+  0.70  0.02 :	 SLIM_GEN OLCA MF    NB
+  0.76  0.01 :	 SLIM_GEN SPA  BP    NB
+  0.73  0.02 :	 SLIM_GEN SPA  CC    NB
+  0.72  0.02 :	 SLIM_GEN SPA  MF    NB
+  0.76  0.02 :	 SLIM_GEN SPS  BP    NB
+  0.75  0.02 :	 SLIM_GEN SPS  CC    NB
+  0.72  0.02 :	 SLIM_GEN SPS  MF    NB
+  0.83  0.02 :	 SLIM_GEN ULCA BP    NB
+  0.84  0.02 :	 SLIM_GEN ULCA CC    NB
+  0.76  0.02 :	 SLIM_GEN ULCA MF    NB
+  0.81  0.02 :	 SLIM_GEN WLCA BP    NB
+  0.78  0.02 :	 SLIM_GEN WLCA CC    NB
+  0.71  0.03 :	 SLIM_GEN WLCA MF    NB
+SUMMARY: annotator, encoding
+  AUC|mean:std
+  0.77  0.04 :	 ALL      AA
+  0.72  0.14 :	 ALL      AC
+  0.80  0.17 :	 ALL      ACA
+  0.80  0.05 :	 ALL      AL
+  0.84  0.15 :	 ALL      LCA
+  0.84  0.25 :	 ALL      OLCA
+  0.78  0.10 :	 ALL      SPA
+  0.80  0.09 :	 ALL      SPS
+  0.86  0.19 :	 ALL      ULCA
+  0.82  0.20 :	 ALL      WLCA
+  0.73  0.05 :	 SLIM_GEN AA
+  0.79  0.23 :	 SLIM_GEN AC
+  0.77  0.15 :	 SLIM_GEN ACA
+  0.74  0.09 :	 SLIM_GEN AL
+  0.80  0.21 :	 SLIM_GEN LCA
+  0.78  0.33 :	 SLIM_GEN OLCA
+  0.74  0.09 :	 SLIM_GEN SPA
+  0.74  0.09 :	 SLIM_GEN SPS
+  0.81  0.20 :	 SLIM_GEN ULCA
+  0.77  0.22 :	 SLIM_GEN WLCA
+SUMMARY: annotator, ontology
+  AUC|mean:std
+  0.82  0.42 :	 ALL      BP
+  0.81  0.50 :	 ALL      CC
+  0.77  0.29 :	 ALL      MF
+  0.79  0.34 :	 SLIM_GEN BP
+  0.79  0.40 :	 SLIM_GEN CC
+  0.73  0.17 :	 SLIM_GEN MF
+SUMMARY: annotator
+  AUC|mean:std
+  0.80  0.80 :	 ALL
+  0.77  0.73 :	 SLIM_GEN
+SUMMARY: classifier
+  AUC|mean:std
+  0.79  1.18 :	 NB
+SUMMARY: encoding
+  AUC|mean:std
+  0.75  0.18 :	 AA
+  0.76  0.36 :	 AC
+  0.78  0.26 :	 ACA
+  0.77  0.22 :	 AL
+  0.82  0.32 :	 LCA
+  0.81  0.46 :	 OLCA
+  0.76  0.22 :	 SPA
+  0.77  0.24 :	 SPS
+  0.83  0.34 :	 ULCA
+  0.80  0.37 :	 WLCA
+SUMMARY: ontology
+  AUC|mean:std
+  0.81  0.60 :	 BP
+  0.80  0.67 :	 CC
+  0.75  0.47 :	 MF
+finished.
+
+
+Loading network...
+  Network: SC_string.txt
+  proteins: 3301  interactions pos:21096
+Create interaction set...
+  interactions: pos:0 neg:0
+running...
+GOAnnotator:
+running...
+   0.0
+Ontology cellular_component,  size: 57
+   2.8
+Ontology molecular_function,  size: 58
+   5.6
+Ontology biological_process,  size: 83
+   8.3
+Ontology cellular_component,  size: 57
+  11.1
+Ontology molecular_function,  size: 58
+  13.9
+Ontology biological_process,  size: 83
+  16.7
+Ontology cellular_component,  size: 18
+  19.4
+Ontology molecular_function,  size: 36
+  22.2
+Ontology biological_process,  size: 33
+  25.0
+Ontology cellular_component,  size: 18
+  27.8
+Ontology molecular_function,  size: 36
+  30.6
+Ontology biological_process,  size: 33
+  33.3
+Ontology cellular_component,  size: 159
+  36.1
+Ontology molecular_function,  size: 56
+  38.9
+Ontology biological_process,  size: 218
+  41.7
+Ontology cellular_component,  size: 159
+  44.4
+Ontology molecular_function,  size: 56
+  47.2
+Ontology biological_process,  size: 218
+  50.0
+Ontology cellular_component,  size: 57
+  52.8
+Ontology molecular_function,  size: 37
+  55.6
+Ontology biological_process,  size: 122
+  58.3
+Ontology cellular_component,  size: 57
+  61.1
+Ontology molecular_function,  size: 37
+  63.9
+Ontology biological_process,  size: 122
+  66.7
+Ontology cellular_component,  size: 31
+  69.4
+Ontology molecular_function,  size: 11
+  72.2
+Ontology biological_process,  size: 89
+  75.0
+Ontology cellular_component,  size: 31
+  77.8
+Ontology molecular_function,  size: 11
+  80.6
+Ontology biological_process,  size: 89
+  83.3
+Ontology cellular_component,  size: 745
+  86.1
+Ontology molecular_function,  size: 1318
+  88.9
+Ontology biological_process,  size: 2913
+  91.7
+Ontology cellular_component,  size: 745
+  94.4
+Ontology molecular_function,  size: 1318
+  97.2
+Ontology biological_process,  size: 2913
+finished.
+
+
+SUMMARY: annotator, encoding, ontology, classifier
+  AUC|mean:std
+  0.76  0.01 :	 ALL      AC   BP    RF
+  0.71  0.02 :	 ALL      AC   CC    RF
+  0.72  0.01 :	 ALL      AC   MF    RF
+  0.95  0.01 :	 ALL      ULCA BP    RF
+  0.94  0.01 :	 ALL      ULCA CC    RF
+  0.89  0.01 :	 ALL      ULCA MF    RF
+  0.83  0.03 :	 SLIM_GEN AC   BP    RF
+  0.83  0.01 :	 SLIM_GEN AC   CC    RF
+  0.74  0.03 :	 SLIM_GEN AC   MF    RF
+  0.90  0.02 :	 SLIM_GEN ULCA BP    RF
+  0.90  0.02 :	 SLIM_GEN ULCA CC    RF
+  0.82  0.02 :	 SLIM_GEN ULCA MF    RF
+  0.79  0.02 :	 SLIM_GOA AC   BP    RF
+  0.67  0.02 :	 SLIM_GOA AC   CC    RF
+  0.74  0.03 :	 SLIM_GOA AC   MF    RF
+  0.81  0.02 :	 SLIM_GOA ULCA BP    RF
+  0.71  0.03 :	 SLIM_GOA ULCA CC    RF
+  0.78  0.01 :	 SLIM_GOA ULCA MF    RF
+  0.85  0.02 :	 SLIM_PIR AC   BP    RF
+  0.75  0.02 :	 SLIM_PIR AC   CC    RF
+  0.75  0.02 :	 SLIM_PIR AC   MF    RF
+  0.92  0.01 :	 SLIM_PIR ULCA BP    RF
+  0.91  0.01 :	 SLIM_PIR ULCA CC    RF
+  0.80  0.02 :	 SLIM_PIR ULCA MF    RF
+  0.84  0.01 :	 SLIM_PPI  AC   BP    RF
+  0.73  0.03 :	 SLIM_PPI  AC   CC    RF
+  0.71  0.02 :	 SLIM_PPI  AC   MF    RF
+  0.91  0.02 :	 SLIM_PPI  ULCA BP    RF
+  0.84  0.01 :	 SLIM_PPI  ULCA CC    RF
+  0.77  0.03 :	 SLIM_PPI  ULCA MF    RF
+  0.85  0.02 :	 SLIM_SC  AC   BP    RF
+  0.82  0.02 :	 SLIM_SC  AC   CC    RF
+  0.74  0.03 :	 SLIM_SC  AC   MF    RF
+  0.91  0.01 :	 SLIM_SC  ULCA BP    RF
+  0.88  0.01 :	 SLIM_SC  ULCA CC    RF
+  0.82  0.02 :	 SLIM_SC  ULCA MF    RF
+SUMMARY: annotator, encoding
+  AUC|mean:std
+  0.73  0.12 :	 ALL      AC
+  0.93  0.15 :	 ALL      ULCA
+  0.80  0.23 :	 SLIM_GEN AC
+  0.87  0.21 :	 SLIM_GEN ULCA
+  0.73  0.29 :	 SLIM_GOA AC
+  0.77  0.24 :	 SLIM_GOA ULCA
+  0.78  0.27 :	 SLIM_PIR AC
+  0.88  0.30 :	 SLIM_PIR ULCA
+  0.76  0.33 :	 SLIM_PPI  AC
+  0.84  0.31 :	 SLIM_PPI  ULCA
+  0.81  0.25 :	 SLIM_SC  AC
+  0.87  0.22 :	 SLIM_SC  ULCA
+SUMMARY: annotator, ontology
+  AUC|mean:std
+  0.85  0.42 :	 ALL      BP
+  0.83  0.51 :	 ALL      CC
+  0.80  0.38 :	 ALL      MF
+  0.86  0.17 :	 SLIM_GEN BP
+  0.86  0.16 :	 SLIM_GEN CC
+  0.78  0.19 :	 SLIM_GEN MF
+  0.80  0.06 :	 SLIM_GOA BP
+  0.69  0.11 :	 SLIM_GOA CC
+  0.76  0.10 :	 SLIM_GOA MF
+  0.89  0.15 :	 SLIM_PIR BP
+  0.83  0.36 :	 SLIM_PIR CC
+  0.77  0.13 :	 SLIM_PIR MF
+  0.88  0.15 :	 SLIM_PPI  BP
+  0.79  0.26 :	 SLIM_PPI  CC
+  0.74  0.15 :	 SLIM_PPI  MF
+  0.88  0.14 :	 SLIM_SC  BP
+  0.85  0.14 :	 SLIM_SC  CC
+  0.78  0.16 :	 SLIM_SC  MF
+SUMMARY: annotator
+  AUC|mean:std
+  0.83  0.78 :	 ALL
+  0.84  0.43 :	 SLIM_GEN
+  0.75  0.40 :	 SLIM_GOA
+  0.83  0.54 :	 SLIM_PIR
+  0.80  0.56 :	 SLIM_PPI
+  0.84  0.41 :	 SLIM_SC
+SUMMARY: classifier
+  AUC|mean:std
+  0.81  1.43 :	 RF
+SUMMARY: encoding
+  AUC|mean:std
+  0.77  0.74 :	 AC
+  0.86  0.87 :	 ULCA
+SUMMARY: ontology
+  AUC|mean:std
+  0.86  0.61 :	 BP
+  0.81  0.96 :	 CC
+  0.77  0.54 :	 MF
+finished.

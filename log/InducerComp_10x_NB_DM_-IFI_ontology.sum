@@ -1,0 +1,6 @@
+SUMMARY	InducerComp_10x_NB_DM_-IFI
+VAR	ontology
+COL	mean AUC	std AUC	mean ROC20	std ROC20	mean ROC50	std ROC50	mean MCC	mean F1	mean ACC	mean SN	mean SP	mean PRE	mean REC	ontology
+DAT	0.73	0.67	0.59	0.75	0.73	0.67	0.40	0.63	0.68	0.56	0.81	0.78	0.56	BP   
+DAT	0.68	0.72	0.58	0.60	0.68	0.72	0.30	0.57	0.64	0.51	0.77	0.72	0.51	CC   
+DAT	0.72	0.67	0.59	0.78	0.72	0.67	0.38	0.61	0.67	0.56	0.79	0.76	0.56	MF   

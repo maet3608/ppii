@@ -1,0 +1,6 @@
+SUMMARY	InducerComp_10x_RF_SC_ULCA_-IFI
+VAR	inducer	ontology
+COL	mean AUC	std AUC	mean ROC20	std ROC20	mean ROC50	std ROC50	mean MCC	mean F1	mean ACC	mean SN	mean SP	mean PRE	mean REC	inducer	ontology
+DAT	0.91	0.02	0.55	0.47	0.50	0.00	0.69	0.84	0.84	0.84	0.85	0.85	0.84	ULCA	BP   
+DAT	0.91	0.01	0.55	0.47	0.50	0.00	0.67	0.83	0.83	0.83	0.84	0.84	0.83	ULCA	CC   
+DAT	0.82	0.03	0.60	0.63	0.50	0.00	0.48	0.75	0.74	0.80	0.67	0.71	0.80	ULCA	MF   

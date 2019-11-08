@@ -1,0 +1,124 @@
+Comparison of GO driven predictor with sequenced based methods.
+Results for sequence methods are from Park:
+Park, Y. (2009)
+Critical assessment of sequence-based protein-protein interaction prediction methods that do not require homologous protein sequences.
+BMC Bioinformatics}, 10, 419.
+
+
+Park, human dataset
+M1 0.86
+M2 0.81
+M3 0.67
+M4 0.83
+C 0.91
+(4-fold cross validation, negative dataset 10 times of positive set)
+
+Park, yeast dataset (very similar to SC_park)
+Method Auc
+M1  0.83
+M2  0.79
+M3  0.60
+M4  0.75
+C   0.85
+(4-fold cross validation, negative dataset 10 times of positive set)
+
+
+
+SC_park, RandomForest -I 200,  BP+CC+MF, 10-fold x-validation, EvidenceFilterAll
+proteins: 2152  interaction 3844
+Annotate GO terms ...
+Create interaction set...
+interactions: 7688
+Loading ontology...
+Dag size : 713
+Dag size : 1081
+Dag size : 2650
+SUMMARY: binary, encoding, ontology, classifier
+  AUC|mean:std
+  0.91  0.02 :	 BIN ULCA ALL   RF3
+
+
+
+
+SC_park, RandomForest -I 200,  BP+CC+MF, 10-fold x-validation, EvidenceFilterNI
+proteins: 2152  interaction 3844
+interactions: 7688
+Dag size : 654
+Dag size : 1034
+Dag size : 2527
+SUMMARY: binary, encoding, ontology, classifier
+  AUC|mean:std
+  0.90  0.03 :	 BIN ULCA ALL   RF3
+
+
+SC_park, RandomForest -I 200,  BP+CC+MF, 4-fold x-validation, EvidenceFilterAll
+proteins: 2152  interaction 3844
+interactions: 7688
+Dag size : 713
+Dag size : 1081
+Dag size : 2650
+SUMMARY: binary, encoding, ontology, classifier
+  AUC|mean:std
+  0.91  0.00 :	 BIN ULCA ALL   RF3
+
+
+
+SC_park, RandomForest -I 200,  BP+CC+MF, 4-fold x-validation, EvidenceFilterNI
+proteins: 2152  interaction 3844
+interactions: 7688
+Dag size : 654
+Dag size : 1034
+Dag size : 2527
+running...
+SUMMARY: binary, encoding, ontology, classifier
+  AUC|mean:std
+  0.90  0.01 :	 BIN ULCA ALL   RF3
+
+
+
+
+SC_park, RandomForest -I 200,  BP, 4-fold x-validation, EvidenceFilterAll
+proteins: 2152  interaction 3844
+interactions: 7688
+Loading ontology...
+Dag size : 2650
+SUMMARY: binary, encoding, ontology, classifier
+  AUC|mean:std
+  0.89  0.02 :	 BIN ULCA BP    RF3
+
+
+SC_park, RandomForest -I 200,  BP, 4-fold x-validation, EvidenceFilterNI
+proteins: 2152  interaction 3844
+interactions: 7688
+Loading ontology...
+Dag size : 2527
+SUMMARY: binary, encoding, ontology, classifier
+  AUC|mean:std
+  0.86  0.02 :	 BIN ULCA BP    RF3
+
+
+
+SC_park, RandomForest -I 200,  BP+CC, 4-fold x-validation, EvidenceFilterAll
+proteins: 2152  interaction 3844
+interactions: 7688
+Dag size : 713
+Dag size : 2650
+SUMMARY: binary, encoding, ontology, classifier
+  AUC|mean:std
+  0.90  0.00 :	 BIN ULCA CC|BP RF3
+
+
+
+SC_park, RandomForest -I 200,  BP+CC, 4-fold x-validation, EvidenceFilterNI
+proteins: 2152  interaction 3844
+interactions: 7688
+Loading ontology...
+Dag size : 654
+Dag size : 2527
+SUMMARY: binary, encoding, ontology, classifier
+  AUC|mean:std
+  0.89  0.02 :	 BIN ULCA CC|BP RF3
+
+
+
+

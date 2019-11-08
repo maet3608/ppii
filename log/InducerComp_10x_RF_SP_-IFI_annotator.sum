@@ -1,0 +1,4 @@
+SUMMARY	InducerComp_10x_RF_SP_-IFI
+VAR	annotator
+COL	mean AUC	std AUC	mean ROC20	std ROC20	mean ROC50	std ROC50	mean MCC	mean F1	mean ACC	mean SN	mean SP	mean PRE	mean REC	annotator
+DAT	0.81	1.35	0.69	2.88	0.63	1.68	0.49	0.73	0.74	0.74	0.74	0.75	0.74	-IFI  

@@ -1,2 +1,6 @@
 # ppii
-Protein protein interaction inference 
+
+Protein protein interaction inference.
+
+Inference of protein-protein interaction networks
+ 

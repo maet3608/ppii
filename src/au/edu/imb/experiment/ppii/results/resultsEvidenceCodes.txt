@@ -1,0 +1,613 @@
+Loading network...
+  Network: SC_string.txt
+  proteins: 3301  interactions pos:21096
+Create interaction set...
+  interactions: pos:0 neg:0
+running...
+GOAnnotator:
+running...
+   0.0
+Ontology biological_process,  size: 2913
+   5.9
+Ontology biological_process,  size: 2691
+  11.8
+Ontology biological_process,  size: 2911
+  17.6
+Ontology biological_process,  size: 2349
+  23.5
+Ontology biological_process,  size: 2792
+  29.4
+Ontology biological_process,  size: 2904
+  35.3
+Ontology biological_process,  size: 2906
+  41.2
+Ontology biological_process,  size: 2913
+  47.1
+Ontology biological_process,  size: 2913
+  52.9
+Ontology biological_process,  size: 2913
+  58.8
+Ontology biological_process,  size: 2913
+  64.7
+Ontology biological_process,  size: 2913
+  70.6
+Ontology biological_process,  size: 2895
+  76.5
+Ontology biological_process,  size: 2909
+  82.4
+Ontology biological_process,  size: 2906
+  88.2
+Ontology biological_process,  size: 2913
+  94.1
+Ontology biological_process,  size: 2819
+finished.
+
+
+SUMMARY: annotator, encoding, ontology, classifier
+  AUC|mean:std
+  0.89  0.02 :	 EXP ULCA BP    NB
+  0.88  0.02 :	 IC  ULCA BP    NB
+  0.85  0.01 :	 IDA ULCA BP    NB
+  0.88  0.01 :	 IEA ULCA BP    NB
+  0.89  0.01 :	 IEP ULCA BP    NB
+  0.89  0.02 :	 IGC ULCA BP    NB
+  0.88  0.02 :	 IGI ULCA BP    NB
+  0.83  0.02 :	 IMP ULCA BP    NB
+  0.88  0.02 :	 IPI ULCA BP    NB
+  0.89  0.01 :	 ISA ULCA BP    NB
+  0.89  0.02 :	 ISM ULCA BP    NB
+  0.89  0.02 :	 ISO ULCA BP    NB
+  0.89  0.01 :	 ISS ULCA BP    NB
+  0.89  0.02 :	 NAS ULCA BP    NB
+  0.89  0.02 :	 ND  ULCA BP    NB
+  0.89  0.01 :	 RCA ULCA BP    NB
+  0.87  0.01 :	 TAS ULCA BP    NB
+SUMMARY: annotator, encoding
+  AUC|mean:std
+  0.89  0.02 :	 EXP ULCA
+  0.88  0.02 :	 IC  ULCA
+  0.85  0.01 :	 IDA ULCA
+  0.88  0.01 :	 IEA ULCA
+  0.89  0.01 :	 IEP ULCA
+  0.89  0.02 :	 IGC ULCA
+  0.88  0.02 :	 IGI ULCA
+  0.83  0.02 :	 IMP ULCA
+  0.88  0.02 :	 IPI ULCA
+  0.89  0.01 :	 ISA ULCA
+  0.89  0.02 :	 ISM ULCA
+  0.89  0.02 :	 ISO ULCA
+  0.89  0.01 :	 ISS ULCA
+  0.89  0.02 :	 NAS ULCA
+  0.89  0.02 :	 ND  ULCA
+  0.89  0.01 :	 RCA ULCA
+  0.87  0.01 :	 TAS ULCA
+SUMMARY: annotator, ontology
+  AUC|mean:std
+  0.89  0.02 :	 EXP BP
+  0.88  0.02 :	 IC  BP
+  0.85  0.01 :	 IDA BP
+  0.88  0.01 :	 IEA BP
+  0.89  0.01 :	 IEP BP
+  0.89  0.02 :	 IGC BP
+  0.88  0.02 :	 IGI BP
+  0.83  0.02 :	 IMP BP
+  0.88  0.02 :	 IPI BP
+  0.89  0.01 :	 ISA BP
+  0.89  0.02 :	 ISM BP
+  0.89  0.02 :	 ISO BP
+  0.89  0.01 :	 ISS BP
+  0.89  0.02 :	 NAS BP
+  0.89  0.02 :	 ND  BP
+  0.89  0.01 :	 RCA BP
+  0.87  0.01 :	 TAS BP
+SUMMARY: annotator
+  AUC|mean:std
+  0.89  0.02 :	 EXP
+  0.88  0.02 :	 IC
+  0.85  0.01 :	 IDA
+  0.88  0.01 :	 IEA
+  0.89  0.01 :	 IEP
+  0.89  0.02 :	 IGC
+  0.88  0.02 :	 IGI
+  0.83  0.02 :	 IMP
+  0.88  0.02 :	 IPI
+  0.89  0.01 :	 ISA
+  0.89  0.02 :	 ISM
+  0.89  0.02 :	 ISO
+  0.89  0.01 :	 ISS
+  0.89  0.02 :	 NAS
+  0.89  0.02 :	 ND
+  0.89  0.01 :	 RCA
+  0.87  0.01 :	 TAS
+SUMMARY: classifier
+  AUC|mean:std
+  0.88  0.22 :	 NB
+SUMMARY: encoding
+  AUC|mean:std
+  0.88  0.22 :	 ULCA
+SUMMARY: ontology
+  AUC|mean:std
+  0.88  0.22 :	 BP
+finished.
+
+
+Loading network...
+  Network: SC_string.txt
+  proteins: 3301  interactions pos:21096
+Create interaction set...
+  interactions: pos:0 neg:0
+running...
+GOAnnotator:
+running...
+   0.0
+Ontology biological_process,  size: 2772
+  14.3
+Ontology biological_process,  size: 56
+  28.6
+Ontology biological_process,  size: 2819
+  42.9
+Ontology biological_process,  size: 907
+  57.1
+Ontology biological_process,  size: 2790
+  71.4
+Ontology biological_process,  size: 2906
+  85.7
+Ontology biological_process,  size: 2913
+finished.
+
+
+SUMMARY: annotator, encoding, ontology, classifier
+  AUC|mean:std
+  0.89  0.02 :	 EV_ALL   ULCA BP    NB
+  0.50  0.00 :	 EV_COM   ULCA BP    NB
+  0.88  0.02 :	 EV_CUR   ULCA BP    NB
+  0.85  0.02 :	 EV_EXP   ULCA BP    NB
+  0.68  0.03 :	 EV_IEA   ULCA BP    NB
+  0.87  0.01 :	 EV_NI    ULCA BP    NB
+  0.88  0.02 :	 EV_NIF   ULCA BP    NB
+SUMMARY: annotator, encoding
+  AUC|mean:std
+  0.89  0.02 :	 EV_ALL   ULCA
+  0.50  0.00 :	 EV_COM   ULCA
+  0.88  0.02 :	 EV_CUR   ULCA
+  0.85  0.02 :	 EV_EXP   ULCA
+  0.68  0.03 :	 EV_IEA   ULCA
+  0.87  0.01 :	 EV_NI    ULCA
+  0.88  0.02 :	 EV_NIF   ULCA
+SUMMARY: annotator, ontology
+  AUC|mean:std
+  0.89  0.02 :	 EV_ALL   BP
+  0.50  0.00 :	 EV_COM   BP
+  0.88  0.02 :	 EV_CUR   BP
+  0.85  0.02 :	 EV_EXP   BP
+  0.68  0.03 :	 EV_IEA   BP
+  0.87  0.01 :	 EV_NI    BP
+  0.88  0.02 :	 EV_NIF   BP
+SUMMARY: annotator
+  AUC|mean:std
+  0.89  0.02 :	 EV_ALL
+  0.50  0.00 :	 EV_COM
+  0.88  0.02 :	 EV_CUR
+  0.85  0.02 :	 EV_EXP
+  0.68  0.03 :	 EV_IEA
+  0.87  0.01 :	 EV_NI
+  0.88  0.02 :	 EV_NIF
+SUMMARY: classifier
+  AUC|mean:std
+  0.79  1.16 :	 NB
+SUMMARY: encoding
+  AUC|mean:std
+  0.79  1.16 :	 ULCA
+SUMMARY: ontology
+  AUC|mean:std
+  0.79  1.16 :	 BP
+finished.
+
+
+Loading network...
+  Network: SC_park.txt
+  proteins: 2152  interactions pos:3844
+Create interaction set...
+  interactions: pos:0 neg:0
+SUMMARY: annotator, encoding, ontology, classifier
+  AUC|mean:std
+  0.75  0.03 :	 ALL      AC   BP    NB
+  0.73  0.05 :	 ALL      AC   CC    NB
+  0.65  0.05 :	 ALL      AC   MF    NB
+  0.84  0.05 :	 ALL      ULCA BP    NB
+  0.82  0.06 :	 ALL      ULCA CC    NB
+  0.72  0.06 :	 ALL      ULCA MF    NB
+  0.50  0.00 :	 EV_COM   AC   BP    NB
+  0.50  0.00 :	 EV_COM   AC   CC    NB
+  0.50  0.00 :	 EV_COM   AC   MF    NB
+  0.50  0.00 :	 EV_COM   ULCA BP    NB
+  0.50  0.00 :	 EV_COM   ULCA CC    NB
+  0.50  0.00 :	 EV_COM   ULCA MF    NB
+  0.72  0.05 :	 EV_CUR   AC   BP    NB
+  0.70  0.04 :	 EV_CUR   AC   CC    NB
+  0.61  0.08 :	 EV_CUR   AC   MF    NB
+  0.83  0.04 :	 EV_CUR   ULCA BP    NB
+  0.80  0.06 :	 EV_CUR   ULCA CC    NB
+  0.70  0.07 :	 EV_CUR   ULCA MF    NB
+  0.69  0.04 :	 EV_EXP   AC   BP    NB
+  0.69  0.06 :	 EV_EXP   AC   CC    NB
+  0.59  0.07 :	 EV_EXP   AC   MF    NB
+  0.81  0.04 :	 EV_EXP   ULCA BP    NB
+  0.79  0.05 :	 EV_EXP   ULCA CC    NB
+  0.68  0.07 :	 EV_EXP   ULCA MF    NB
+  0.62  0.06 :	 EV_IEA   AC   BP    NB
+  0.58  0.03 :	 EV_IEA   AC   CC    NB
+  0.59  0.04 :	 EV_IEA   AC   MF    NB
+  0.64  0.06 :	 EV_IEA   ULCA BP    NB
+  0.60  0.07 :	 EV_IEA   ULCA CC    NB
+  0.62  0.05 :	 EV_IEA   ULCA MF    NB
+  0.71  0.03 :	 EV_NI    AC   BP    NB
+  0.70  0.05 :	 EV_NI    AC   CC    NB
+  0.62  0.04 :	 EV_NI    AC   MF    NB
+  0.81  0.05 :	 EV_NI    ULCA BP    NB
+  0.78  0.06 :	 EV_NI    ULCA CC    NB
+  0.69  0.05 :	 EV_NI    ULCA MF    NB
+SUMMARY: annotator, encoding
+  AUC|mean:std
+  0.71  0.25 :	 ALL      AC
+  0.80  0.30 :	 ALL      ULCA
+  0.50  0.01 :	 EV_COM   AC
+  0.50  0.01 :	 EV_COM   ULCA
+  0.68  0.29 :	 EV_CUR   AC
+  0.78  0.32 :	 EV_CUR   ULCA
+  0.66  0.29 :	 EV_EXP   AC
+  0.76  0.31 :	 EV_EXP   ULCA
+  0.60  0.11 :	 EV_IEA   AC
+  0.62  0.14 :	 EV_IEA   ULCA
+  0.68  0.24 :	 EV_NI    AC
+  0.76  0.30 :	 EV_NI    ULCA
+SUMMARY: annotator, ontology
+  AUC|mean:std
+  0.79  0.23 :	 ALL      BP
+  0.78  0.23 :	 ALL      CC
+  0.68  0.19 :	 ALL      MF
+  0.50  0.01 :	 EV_COM   BP
+  0.50  0.00 :	 EV_COM   CC
+  0.50  0.01 :	 EV_COM   MF
+  0.78  0.25 :	 EV_CUR   BP
+  0.75  0.24 :	 EV_CUR   CC
+  0.66  0.23 :	 EV_CUR   MF
+  0.75  0.26 :	 EV_EXP   BP
+  0.74  0.22 :	 EV_EXP   CC
+  0.63  0.24 :	 EV_EXP   MF
+  0.63  0.09 :	 EV_IEA   BP
+  0.59  0.09 :	 EV_IEA   CC
+  0.60  0.08 :	 EV_IEA   MF
+  0.76  0.22 :	 EV_NI    BP
+  0.74  0.19 :	 EV_NI    CC
+  0.65  0.17 :	 EV_NI    MF
+SUMMARY: annotator
+  AUC|mean:std
+  0.75  0.53 :	 ALL
+  0.50  0.01 :	 EV_COM
+  0.73  0.59 :	 EV_CUR
+  0.71  0.58 :	 EV_EXP
+  0.61  0.19 :	 EV_IEA
+  0.72  0.49 :	 EV_NI
+SUMMARY: classifier
+  AUC|mean:std
+  0.67  2.01 :	 NB
+SUMMARY: encoding
+  AUC|mean:std
+  0.64  1.08 :	 AC
+  0.70  1.57 :	 ULCA
+SUMMARY: ontology
+  AUC|mean:std
+  0.70  1.25 :	 BP
+  0.68  1.21 :	 CC
+  0.62  0.78 :	 MF
+finished.
+
+
+Loading network...
+  Network: SC_park.txt
+  proteins: 2152  interactions pos:3844
+Create interaction set...
+  interactions: pos:3844 neg:3844
+running...
+GOAnnotator:
+running...
+   0.0
+Ontology cellular_component,  size: 56
+   3.3
+Ontology molecular_function,  size: 58
+   6.7
+Ontology biological_process,  size: 85
+  10.0
+Ontology cellular_component,  size: 56
+  13.3
+Ontology molecular_function,  size: 58
+  16.7
+Ontology biological_process,  size: 85
+  20.0
+Ontology cellular_component,  size: 18
+  23.3
+Ontology molecular_function,  size: 36
+  26.7
+Ontology biological_process,  size: 35
+  30.0
+Ontology cellular_component,  size: 18
+  33.3
+Ontology molecular_function,  size: 36
+  36.7
+Ontology biological_process,  size: 35
+  40.0
+Ontology cellular_component,  size: 155
+  43.3
+Ontology molecular_function,  size: 55
+  46.7
+Ontology biological_process,  size: 209
+  50.0
+Ontology cellular_component,  size: 155
+  53.3
+Ontology molecular_function,  size: 55
+  56.7
+Ontology biological_process,  size: 209
+  60.0
+Ontology cellular_component,  size: 57
+  63.3
+Ontology molecular_function,  size: 37
+  66.7
+Ontology biological_process,  size: 122
+  70.0
+Ontology cellular_component,  size: 57
+  73.3
+Ontology molecular_function,  size: 37
+  76.7
+Ontology biological_process,  size: 122
+  80.0
+Ontology cellular_component,  size: 709
+  83.3
+Ontology molecular_function,  size: 1063
+  86.7
+Ontology biological_process,  size: 2632
+  90.0
+Ontology cellular_component,  size: 709
+  93.3
+Ontology molecular_function,  size: 1063
+  96.7
+Ontology biological_process,  size: 2632
+finished.
+
+
+SUMMARY: annotator, encoding, ontology, classifier
+  AUC|mean:std
+  0.75  0.04 :	 ALL      AC   BP    NB
+  0.73  0.05 :	 ALL      AC   CC    NB
+  0.65  0.04 :	 ALL      AC   MF    NB
+  0.84  0.04 :	 ALL      ULCA BP    NB
+  0.83  0.03 :	 ALL      ULCA CC    NB
+  0.72  0.05 :	 ALL      ULCA MF    NB
+  0.80  0.05 :	 SLIM_GEN AC   BP    NB
+  0.76  0.04 :	 SLIM_GEN AC   CC    NB
+  0.69  0.06 :	 SLIM_GEN AC   MF    NB
+  0.79  0.04 :	 SLIM_GEN ULCA BP    NB
+  0.78  0.07 :	 SLIM_GEN ULCA CC    NB
+  0.68  0.06 :	 SLIM_GEN ULCA MF    NB
+  0.74  0.05 :	 SLIM_GOA AC   BP    NB
+  0.72  0.04 :	 SLIM_GOA AC   CC    NB
+  0.68  0.04 :	 SLIM_GOA AC   MF    NB
+  0.73  0.04 :	 SLIM_GOA ULCA BP    NB
+  0.70  0.03 :	 SLIM_GOA ULCA CC    NB
+  0.64  0.10 :	 SLIM_GOA ULCA MF    NB
+  0.82  0.04 :	 SLIM_PIR AC   BP    NB
+  0.79  0.04 :	 SLIM_PIR AC   CC    NB
+  0.68  0.05 :	 SLIM_PIR AC   MF    NB
+  0.80  0.06 :	 SLIM_PIR ULCA BP    NB
+  0.78  0.05 :	 SLIM_PIR ULCA CC    NB
+  0.64  0.08 :	 SLIM_PIR ULCA MF    NB
+  0.81  0.05 :	 SLIM_SC  AC   BP    NB
+  0.77  0.05 :	 SLIM_SC  AC   CC    NB
+  0.69  0.06 :	 SLIM_SC  AC   MF    NB
+  0.79  0.05 :	 SLIM_SC  ULCA BP    NB
+  0.75  0.05 :	 SLIM_SC  ULCA CC    NB
+  0.68  0.05 :	 SLIM_SC  ULCA MF    NB
+SUMMARY: annotator, encoding
+  AUC|mean:std
+  0.71  0.26 :	 ALL      AC
+  0.80  0.31 :	 ALL      ULCA
+  0.75  0.24 :	 SLIM_GEN AC
+  0.75  0.28 :	 SLIM_GEN ULCA
+  0.71  0.17 :	 SLIM_GOA AC
+  0.69  0.23 :	 SLIM_GOA ULCA
+  0.76  0.34 :	 SLIM_PIR AC
+  0.74  0.40 :	 SLIM_PIR ULCA
+  0.76  0.29 :	 SLIM_SC  AC
+  0.74  0.26 :	 SLIM_SC  ULCA
+SUMMARY: annotator
+  AUC|mean:std
+  0.75  0.53 :	 ALL
+  0.75  0.37 :	 SLIM_GEN
+  0.70  0.30 :	 SLIM_GOA
+  0.75  0.53 :	 SLIM_PIR
+  0.75  0.40 :	 SLIM_SC
+SUMMARY: classifier
+  AUC|mean:std
+  0.74  1.03 :	 NB
+SUMMARY: encoding
+  AUC|mean:std
+  0.74  0.65 :	 AC
+  0.74  0.79 :	 ULCA
+SUMMARY: ontology
+  AUC|mean:std
+  0.79  0.37 :	 BP
+  0.76  0.39 :	 CC
+  0.67  0.31 :	 MF
+finished.
+
+
+Loading network...
+  Network: SC_string.txt
+  proteins: 3301  interactions pos:21096
+Create interaction set...
+  interactions: pos:21096 neg:21096
+running...
+SUMMARY: annotator, encoding, ontology, classifier
+  AUC|mean:std
+  0.76  0.02 :     ALL      AC   BP    NB
+  0.71  0.02 :     ALL      AC   CC    NB
+  0.70  0.02 :     ALL      AC   MF    NB
+  0.89  0.02 :     ALL      ULCA BP    NB
+  0.88  0.01 :     ALL      ULCA CC    NB
+  0.81  0.02 :     ALL      ULCA MF    NB
+  0.82  0.02 :     SLIM_GEN AC   BP    NB
+  0.82  0.02 :     SLIM_GEN AC   CC    NB
+  0.73  0.03 :     SLIM_GEN AC   MF    NB
+  0.83  0.02 :     SLIM_GEN ULCA BP    NB
+  0.84  0.02 :     SLIM_GEN ULCA CC    NB
+  0.76  0.03 :     SLIM_GEN ULCA MF    NB
+  0.76  0.03 :     SLIM_GOA AC   BP    NB
+  0.66  0.02 :     SLIM_GOA AC   CC    NB
+  0.73  0.02 :     SLIM_GOA AC   MF    NB
+  0.74  0.02 :     SLIM_GOA ULCA BP    NB
+  0.70  0.03 :     SLIM_GOA ULCA CC    NB
+  0.75  0.02 :     SLIM_GOA ULCA MF    NB
+  0.84  0.01 :     SLIM_PIR AC   BP    NB
+  0.74  0.01 :     SLIM_PIR AC   CC    NB
+  0.73  0.03 :     SLIM_PIR AC   MF    NB
+  0.84  0.01 :     SLIM_PIR ULCA BP    NB
+  0.84  0.02 :     SLIM_PIR ULCA CC    NB
+  0.75  0.01 :     SLIM_PIR ULCA MF    NB
+  0.85  0.02 :     SLIM_SC  AC   BP    NB
+  0.80  0.02 :     SLIM_SC  AC   CC    NB
+  0.73  0.02 :     SLIM_SC  AC   MF    NB
+  0.84  0.02 :     SLIM_SC  ULCA BP    NB
+  0.82  0.03 :     SLIM_SC  ULCA CC    NB
+  0.77  0.02 :     SLIM_SC  ULCA MF    NB
+SUMMARY: annotator, encoding
+  AUC|mean:std
+  0.72  0.14 :     ALL      AC
+  0.86  0.19 :     ALL      ULCA
+  0.79  0.23 :     SLIM_GEN AC
+  0.81  0.20 :     SLIM_GEN ULCA
+  0.72  0.23 :     SLIM_GOA AC
+  0.73  0.13 :     SLIM_GOA ULCA
+  0.77  0.27 :     SLIM_PIR AC
+  0.81  0.24 :     SLIM_PIR ULCA
+  0.79  0.26 :     SLIM_SC  AC
+  0.81  0.17 :     SLIM_SC  ULCA
+SUMMARY: annotator
+  AUC|mean:std
+  0.79  0.58 :     ALL
+  0.80  0.31 :     SLIM_GEN
+  0.72  0.27 :     SLIM_GOA
+  0.79  0.39 :     SLIM_PIR
+  0.80  0.32 :     SLIM_SC
+SUMMARY: classifier
+  AUC|mean:std
+  0.78  1.01 :     NB
+SUMMARY: encoding
+  AUC|mean:std
+  0.76  0.65 :     AC
+  0.80  0.67 :     ULCA
+SUMMARY: ontology
+  AUC|mean:std
+  0.82  0.47 :     BP
+  0.78  0.69 :     CC
+  0.75  0.28 :     MF
+finished.
+
+
+Loading network...
+  Network: SC_string.txt
+  proteins: 3301  interactions pos:21096
+Create interaction set...
+  interactions: pos:0 neg:0
+SUMMARY: annotator, encoding, ontology, classifier
+  AUC|mean:std
+  0.76  0.02 :     ALL      AC   BP    NB
+  0.71  0.02 :     ALL      AC   CC    NB
+  0.70  0.02 :     ALL      AC   MF    NB
+  0.89  0.01 :     ALL      ULCA BP    NB
+  0.88  0.01 :     ALL      ULCA CC    NB
+  0.81  0.02 :     ALL      ULCA MF    NB
+  0.82  0.02 :     SLIM_GEN AC   BP    NB
+  0.82  0.02 :     SLIM_GEN AC   CC    NB
+  0.73  0.03 :     SLIM_GEN AC   MF    NB
+  0.83  0.01 :     SLIM_GEN ULCA BP    NB
+  0.84  0.02 :     SLIM_GEN ULCA CC    NB
+  0.76  0.01 :     SLIM_GEN ULCA MF    NB
+  0.76  0.02 :     SLIM_GOA AC   BP    NB
+  0.66  0.02 :     SLIM_GOA AC   CC    NB
+  0.73  0.01 :     SLIM_GOA AC   MF    NB
+  0.74  0.03 :     SLIM_GOA ULCA BP    NB
+  0.70  0.03 :     SLIM_GOA ULCA CC    NB
+  0.75  0.02 :     SLIM_GOA ULCA MF    NB
+  0.84  0.03 :     SLIM_PIR AC   BP    NB
+  0.74  0.01 :     SLIM_PIR AC   CC    NB
+  0.73  0.02 :     SLIM_PIR AC   MF    NB
+  0.84  0.02 :     SLIM_PIR ULCA BP    NB
+  0.84  0.01 :     SLIM_PIR ULCA CC    NB
+  0.75  0.02 :     SLIM_PIR ULCA MF    NB
+  0.83  0.01 :     SLIM_PPI  AC   BP    NB
+  0.72  0.02 :     SLIM_PPI  AC   CC    NB
+  0.69  0.02 :     SLIM_PPI  AC   MF    NB
+  0.83  0.02 :     SLIM_PPI  ULCA BP    NB
+  0.79  0.01 :     SLIM_PPI  ULCA CC    NB
+  0.74  0.02 :     SLIM_PPI  ULCA MF    NB
+  0.85  0.01 :     SLIM_SC  AC   BP    NB
+  0.80  0.01 :     SLIM_SC  AC   CC    NB
+  0.73  0.03 :     SLIM_SC  AC   MF    NB
+  0.84  0.02 :     SLIM_SC  ULCA BP    NB
+  0.82  0.02 :     SLIM_SC  ULCA CC    NB
+  0.77  0.02 :     SLIM_SC  ULCA MF    NB
+SUMMARY: annotator, encoding
+  AUC|mean:std
+  0.72  0.14 :     ALL      AC
+  0.86  0.19 :     ALL      ULCA
+  0.79  0.23 :     SLIM_GEN AC
+  0.81  0.20 :     SLIM_GEN ULCA
+  0.72  0.23 :     SLIM_GOA AC
+  0.73  0.14 :     SLIM_GOA ULCA
+  0.77  0.27 :     SLIM_PIR AC
+  0.81  0.24 :     SLIM_PIR ULCA
+  0.75  0.34 :     SLIM_PPI  AC
+  0.79  0.21 :     SLIM_PPI  ULCA
+  0.79  0.26 :     SLIM_SC  AC
+  0.81  0.17 :     SLIM_SC  ULCA
+SUMMARY: annotator, ontology
+  AUC|mean:std
+  0.82  0.30 :     ALL      BP
+  0.79  0.37 :     ALL      CC
+  0.76  0.25 :     ALL      MF
+  0.82  0.03 :     SLIM_GEN BP
+  0.83  0.05 :     SLIM_GEN CC
+  0.74  0.07 :     SLIM_GEN MF
+  0.75  0.06 :     SLIM_GOA BP
+  0.68  0.09 :     SLIM_GOA CC
+  0.74  0.05 :     SLIM_GOA MF
+  0.84  0.03 :     SLIM_PIR BP
+  0.79  0.21 :     SLIM_PIR CC
+  0.74  0.04 :     SLIM_PIR MF
+  0.83  0.03 :     SLIM_PPI  BP
+  0.75  0.16 :     SLIM_PPI  CC
+  0.71  0.12 :     SLIM_PPI  MF
+  0.84  0.03 :     SLIM_SC  BP
+  0.81  0.04 :     SLIM_SC  CC
+  0.75  0.09 :     SLIM_SC  MF
+SUMMARY: annotator
+  AUC|mean:std
+  0.79  0.58 :     ALL
+  0.80  0.31 :     SLIM_GEN
+  0.72  0.27 :     SLIM_GOA
+  0.79  0.39 :     SLIM_PIR
+  0.77  0.43 :     SLIM_PPI
+  0.80  0.32 :     SLIM_SC
+SUMMARY: classifier
+  AUC|mean:std
+  0.78  1.10 :     NB
+SUMMARY: encoding
+  AUC|mean:std
+  0.76  0.74 :     AC
+  0.80  0.71 :     ULCA
+SUMMARY: ontology
+  AUC|mean:std
+  0.82  0.47 :     BP
+  0.78  0.72 :     CC
+  0.74  0.33 :     MF
+finished.

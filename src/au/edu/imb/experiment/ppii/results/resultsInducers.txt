@@ -1,0 +1,542 @@
+Naive Bayes
+average over the three ontologies
+SC_park.txt
+  0.64  0.11 :	 AA
+  0.70  0.25 :	 AC
+  0.75  0.27 :	 ACA
+  0.65  0.12 :	 AL
+  0.76  0.25 :	 LCA
+  0.77  0.33 :	 OLCA
+  0.67  0.17 :	 SPA
+  0.68  0.19 :	 SPS
+  0.80  0.30 :	 ULCA
+  0.76  0.28 :	 WLCA
+HS_string.txt
+  0.73  0.11 :	 AA
+  0.71  0.14 :	 AC
+  0.77  0.06 :	 ACA
+  0.76  0.08 :	 AL
+  0.81  0.07 :	 LCA
+  0.80  0.12 :	 OLCA
+  0.75  0.14 :	 SPA
+  0.76  0.07 :	 SPS
+  0.83  0.06 :	 ULCA
+  0.80  0.08 :	 WLCA
+SC_string.txt
+  0.77  0.03 :	 AA
+  0.72  0.14 :	 AC
+  0.80  0.18 :	 ACA
+  0.80  0.05 :	 AL
+  0.84  0.15 :	 LCA
+  0.84  0.25 :	 OLCA
+  0.78  0.10 :	 SPA
+  0.80  0.09 :	 SPS
+  0.86  0.19 :	 ULCA
+  0.82  0.20 :	 WLCA
+MM_string.txt
+  0.66  0.10 :	 AA
+  0.59  0.08 :	 AC
+  0.54  0.10 :	 ACA
+  0.69  0.09 :	 AL
+  0.71  0.08 :	 LCA
+  0.63  0.12 :	 OLCA
+  0.68  0.11 :	 SPA
+  0.69  0.08 :	 SPS
+  0.67  0.10 :	 ULCA
+  0.66  0.10 :	 WLCA
+AT_string.txt
+  0.81  0.14 :	 AA
+  0.65  0.10 :	 AC
+  0.65  0.18 :	 ACA
+  0.83  0.06 :	 AL
+  0.85  0.06 :	 LCA
+  0.70  0.05 :	 OLCA
+  0.82  0.06 :	 SPA
+  0.83  0.07 :	 SPS
+  0.82  0.05 :	 ULCA
+  0.78  0.07 :	 WLCA
+DM_string.txt
+  0.75  0.07 :	 AA
+  0.63  0.07 :	 AC
+  0.63  0.10 :	 ACA
+  0.78  0.08 :	 AL
+  0.79  0.07 :	 LCA
+  0.68  0.10 :	 OLCA
+  0.76  0.09 :	 SPA
+  0.77  0.10 :	 SPS
+  0.74  0.07 :	 ULCA
+  0.71  0.07 :	 WLCA
+SP_string.txt
+  0.88  0.05 :	 AA
+  0.83  0.04 :	 AC
+  0.87  0.10 :	 ACA
+  0.89  0.08 :	 AL
+  0.92  0.14 :	 LCA
+  0.91  0.17 :	 OLCA
+  0.89  0.17 :	 SPA
+  0.90  0.12 :	 SPS
+  0.93  0.13 :	 ULCA
+  0.92  0.11 :	 WLCA
+EC_string.txt
+  0.72  0.34 :	 AA
+  0.77  0.44 :	 AC
+  0.82  0.19 :	 ACA
+  0.73  0.22 :	 AL
+  0.82  0.22 :	 LCA
+  0.84  0.18 :	 OLCA
+  0.78  0.24 :	 SPA
+  0.79  0.25 :	 SPS
+  0.86  0.22 :	 ULCA
+  0.85  0.20 :	 WLCA
+CT_string.txt
+  0.71  0.23 :	 AA
+  0.68  0.26 :	 AC
+  0.72  0.21 :	 ACA
+  0.72  0.18 :	 AL
+  0.76  0.22 :	 LCA
+  0.75  0.14 :	 OLCA
+  0.76  0.19 :	 SPA
+  0.75  0.21 :	 SPS
+  0.77  0.15 :	 ULCA
+  0.71  0.18 :	 WLCA
+
+
+10 fold x-validation
+Random Forest
+SC_string.txt
+Ontology cellular_component,  size: 745
+Ontology molecular_function,  size: 1318
+Ontology biological_process,  size: 2913
+SUMMARY: encoding, ontology
+  AUC|mean:std
+  0.76  0.02 :	 AC   BP
+  0.71  0.02 :	 AC   CC
+  0.72  0.03 :	 AC   MF
+  0.89  0.02 :	 AL   BP
+  0.89  0.01 :	 AL   CC
+  0.85  0.02 :	 AL   MF
+  0.95  0.02 :	 LCA  BP
+  0.94  0.01 :	 LCA  CC
+  0.88  0.01 :	 LCA  MF
+  0.95  0.01 :	 ULCA BP
+  0.94  0.02 :	 ULCA CC
+  0.89  0.02 :	 ULCA MF
+SUMMARY: encoding
+  AUC|mean:std
+  0.73  0.12 :	 AC
+  0.88  0.11 :	 AL
+  0.92  0.16 :	 LCA
+  0.93  0.15 :	 ULCA
+HS_string.txt
+Ontology cellular_component,  size: 804
+Ontology molecular_function,  size: 1705
+Ontology biological_process,  size: 5545
+SUMMARY: encoding, ontology
+  AUC|mean:std
+  0.73  0.02 :	 AC   BP
+  0.68  0.01 :	 AC   CC
+  0.73  0.04 :	 AC   MF
+  0.86  0.01 :	 AL   BP
+  0.86  0.02 :	 AL   CC
+  0.86  0.02 :	 AL   MF
+  0.93  0.01 :	 LCA  BP
+  0.91  0.01 :	 LCA  CC
+  0.90  0.02 :	 LCA  MF
+  0.93  0.02 :	 ULCA BP
+  0.91  0.01 :	 ULCA CC
+  0.92  0.02 :	 ULCA MF
+SUMMARY: encoding
+  AUC|mean:std
+  0.71  0.14 :	 AC
+  0.86  0.04 :	 AL
+  0.91  0.06 :	 LCA
+  0.92  0.05 :	 ULCA
+SC_park.txt
+Ontology cellular_component,  size: 713
+Ontology molecular_function,  size: 1081
+Ontology biological_process,  size: 2650
+SUMMARY: encoding, ontology
+  AUC|mean:std
+  0.74  0.03 :	 AC   BP
+  0.72  0.05 :	 AC   CC
+  0.64  0.04 :	 AC   MF
+  0.71  0.07 :	 AL   BP
+  0.74  0.04 :	 AL   CC
+  0.68  0.04 :	 AL   MF
+  0.88  0.03 :	 LCA  BP
+  0.86  0.03 :	 LCA  CC
+  0.76  0.06 :	 LCA  MF
+  0.89  0.02 :	 ULCA BP
+  0.87  0.03 :	 ULCA CC
+  0.77  0.06 :	 ULCA MF
+SUMMARY: encoding
+  AUC|mean:std
+  0.70  0.25 :	 AC
+  0.71  0.17 :	 AL
+  0.83  0.30 :	 LCA
+  0.84  0.29 :	 ULCA
+CT_string
+Ontology cellular_component,  size: 45
+Ontology molecular_function,  size: 309
+Ontology biological_process,  size: 428
+SUMMARY: encoding, ontology
+  AUC|mean:std
+  0.73  0.10 :	 AC   BP
+  0.64  0.09 :	 AC   CC
+  0.73  0.09 :	 AC   MF
+  0.75  0.11 :	 AL   BP
+  0.71  0.12 :	 AL   CC
+  0.77  0.10 :	 AL   MF
+  0.82  0.08 :	 LCA  BP
+  0.76  0.07 :	 LCA  CC
+  0.81  0.12 :	 LCA  MF
+  0.82  0.07 :	 ULCA BP
+  0.76  0.13 :	 ULCA CC
+  0.81  0.06 :	 ULCA MF
+SUMMARY: encoding
+  AUC|mean:std
+  0.70  0.28 :	 AC
+  0.74  0.24 :	 AL
+  0.80  0.21 :	 LCA
+  0.80  0.22 :	 ULCA
+DM_string
+Ontology cellular_component,  size: 443
+Ontology molecular_function,  size: 607
+Ontology biological_process,  size: 2478
+SUMMARY: encoding, ontology
+  AUC|mean:std
+  0.63  0.03 :	 AC   BP
+  0.63  0.05 :	 AC   CC
+  0.64  0.04 :	 AC   MF
+  0.83  0.02 :	 AL   BP
+  0.80  0.03 :	 AL   CC
+  0.82  0.04 :	 AL   MF
+  0.85  0.03 :	 LCA  BP
+  0.84  0.02 :	 LCA  CC
+  0.83  0.02 :	 LCA  MF
+  0.85  0.02 :	 ULCA BP
+  0.84  0.03 :	 ULCA CC
+  0.84  0.03 :	 ULCA MF
+SUMMARY: encoding
+  AUC|mean:std
+  0.63  0.07 :	 AC
+  0.81  0.08 :	 AL
+  0.84  0.05 :	 LCA
+  0.84  0.05 :	 ULCA
+SP_string
+Ontology cellular_component,  size: 431
+Ontology molecular_function,  size: 607
+Ontology biological_process,  size: 1734
+SUMMARY: encoding, ontology
+  AUC|mean:std
+  0.83  0.03 :	 AC   BP
+  0.83  0.03 :	 AC   CC
+  0.85  0.03 :	 AC   MF
+  0.96  0.01 :	 AL   BP
+  0.94  0.01 :	 AL   CC
+  0.94  0.02 :	 AL   MF
+  0.99  0.01 :	 LCA  BP
+  0.96  0.01 :	 LCA  CC
+  0.96  0.01 :	 LCA  MF
+  0.99  0.00 :	 ULCA BP
+  0.96  0.01 :	 ULCA CC
+  0.97  0.01 :	 ULCA MF
+SUMMARY: encoding
+  AUC|mean:std
+  0.84  0.07 :	 AC
+  0.95  0.06 :	 AL
+  0.97  0.06 :	 LCA
+  0.97  0.07 :	 ULCA
+EC_string.txt
+Ontology cellular_component,  size: 157
+Ontology molecular_function,  size: 652
+Ontology biological_process,  size: 964
+SUMMARY: encoding, ontology
+  AUC|mean:std
+  0.84  0.05 :	 AC   BP
+  0.67  0.06 :	 AC   CC
+  0.81  0.06 :	 AC   MF
+  0.83  0.05 :	 AL   BP
+  0.79  0.09 :	 AL   CC
+  0.82  0.06 :	 AL   MF
+  0.95  0.04 :	 LCA  BP
+  0.86  0.05 :	 LCA  CC
+  0.90  0.03 :	 LCA  MF
+  0.96  0.02 :	 ULCA BP
+  0.86  0.08 :	 ULCA CC
+  0.93  0.03 :	 ULCA MF
+SUMMARY: encoding
+  AUC|mean:std
+  0.77  0.43 :	 AC
+  0.81  0.15 :	 AL
+  0.90  0.21 :	 LCA
+  0.91  0.25 :	 ULCA
+AT_string.txt
+Ontology cellular_component,  size: 320
+Ontology molecular_function,  size: 650
+Ontology biological_process,  size: 1811
+SUMMARY: encoding, ontology
+  AUC|mean:std
+  0.66  0.01 :	 AC   BP
+  0.62  0.02 :	 AC   CC
+  0.68  0.03 :	 AC   MF
+  0.87  0.02 :	 AL   BP
+  0.86  0.02 :	 AL   CC
+  0.87  0.01 :	 AL   MF
+  0.89  0.01 :	 LCA  BP
+  0.88  0.01 :	 LCA  CC
+  0.89  0.01 :	 LCA  MF
+  0.90  0.01 :	 ULCA BP
+  0.87  0.01 :	 ULCA CC
+  0.90  0.01 :	 ULCA MF
+SUMMARY: encoding
+  AUC|mean:std
+  0.65  0.13 :	 AC
+  0.87  0.04 :	 AL
+  0.89  0.05 :	 LCA
+  0.89  0.06 :	 ULCA
+MM_string.txt
+Ontology cellular_component,  size: 616
+Ontology molecular_function,  size: 1123
+Ontology biological_process,  size: 4569
+SUMMARY: encoding, ontology
+  AUC|mean:std
+  0.59  0.03 :	 AC   BP
+  0.58  0.02 :	 AC   CC
+  0.60  0.03 :	 AC   MF
+  0.74  0.03 :	 AL   BP
+  0.73  0.03 :	 AL   CC
+  0.73  0.03 :	 AL   MF
+  0.77  0.03 :	 LCA  BP
+  0.76  0.03 :	 LCA  CC
+  0.76  0.03 :	 LCA  MF
+  0.78  0.02 :	 ULCA BP
+  0.76  0.03 :	 ULCA CC
+  0.77  0.03 :	 ULCA MF
+SUMMARY: encoding
+  AUC|mean:std
+  0.59  0.07 :	 AC
+  0.73  0.06 :	 AL
+  0.76  0.06 :	 LCA
+  0.77  0.06 :	 ULCA
+
+
+Loading network...
+  Network: SC_string.txt
+  proteins: 3301  interactions pos:21096
+Annotate GO terms ...
+Create interaction set...
+  interactions: pos:0 neg:0
+Ontology cellular_component,  size: 745
+Ontology molecular_function,  size: 1318
+Ontology biological_process,  size: 2913
+running...
+SUMMARY: encoding, ontology, classifier
+  AUC|mean:std
+  0.78  0.04 :     AA   BP    NB
+  0.77  0.02 :     AA   CC    NB
+  0.77  0.02 :     AA   MF    NB
+  0.76  0.01 :     AC   BP    NB
+  0.71  0.02 :     AC   CC    NB
+  0.70  0.02 :     AC   MF    NB
+  0.81  0.02 :     ACA  BP    NB
+  0.83  0.02 :     ACA  CC    NB
+  0.76  0.02 :     ACA  MF    NB
+  0.80  0.03 :     AL   BP    NB
+  0.80  0.02 :     AL   CC    NB
+  0.79  0.03 :     AL   MF    NB
+  0.87  0.02 :     LCA  BP    NB
+  0.85  0.02 :     LCA  CC    NB
+  0.80  0.01 :     LCA  MF    NB
+  0.88  0.02 :     OLCA BP    NB
+  0.86  0.02 :     OLCA CC    NB
+  0.77  0.04 :     OLCA MF    NB
+  0.81  0.02 :     SPA  BP    NB
+  0.77  0.03 :     SPA  CC    NB
+  0.77  0.03 :     SPA  MF    NB
+  0.81  0.02 :     SPS  BP    NB
+  0.80  0.02 :     SPS  CC    NB
+  0.78  0.03 :     SPS  MF    NB
+  0.89  0.02 :     ULCA BP    NB
+  0.88  0.01 :     ULCA CC    NB
+  0.81  0.03 :     ULCA MF    NB
+  0.84  0.01 :     WLCA BP    NB
+  0.86  0.02 :     WLCA CC    NB
+  0.78  0.02 :     WLCA MF    NB
+SUMMARY: encoding, classifier
+  AUC|mean:std
+  0.77  0.05 :     AA   NB
+  0.72  0.14 :     AC   NB
+  0.80  0.18 :     ACA  NB
+  0.80  0.05 :     AL   NB
+  0.84  0.15 :     LCA  NB
+  0.84  0.25 :     OLCA NB
+  0.78  0.10 :     SPA  NB
+  0.80  0.09 :     SPS  NB
+  0.86  0.19 :     ULCA NB
+  0.82  0.20 :     WLCA NB
+SUMMARY: classifier
+  AUC|mean:std
+  0.80  0.81 :     NB
+SUMMARY: encoding
+  AUC|mean:std
+  0.77  0.05 :     AA
+  0.72  0.14 :     AC
+  0.80  0.18 :     ACA
+  0.80  0.05 :     AL
+  0.84  0.15 :     LCA
+  0.84  0.25 :     OLCA
+  0.78  0.10 :     SPA
+  0.80  0.09 :     SPS
+  0.86  0.19 :     ULCA
+  0.82  0.20 :     WLCA
+SUMMARY: ontology
+  AUC|mean:std
+  0.82  0.42 :     BP
+  0.81  0.50 :     CC
+  0.77  0.29 :     MF
+finished.
+
+
+Loading network...
+  Network: SC_park.txt
+  proteins: 2152  interactions pos:3844
+Annotate GO terms ...
+Create interaction set...
+  interactions: pos:0 neg:0
+Ontology cellular_component,  size: 713
+Ontology molecular_function,  size: 1081
+Ontology biological_process,  size: 2650
+running...
+10 runs !
+SUMMARY: encoding, ontology, classifier
+  AUC|mean:std
+  0.65  0.06 :     AA   BP    NB
+  0.65  0.08 :     AA   CC    NB
+  0.63  0.07 :     AA   MF    NB
+  0.74  0.05 :     AC   BP    NB
+  0.73  0.03 :     AC   CC    NB
+  0.64  0.06 :     AC   MF    NB
+  0.80  0.06 :     ACA  BP    NB
+  0.76  0.04 :     ACA  CC    NB
+  0.69  0.04 :     ACA  MF    NB
+  0.65  0.05 :     AL   BP    NB
+  0.66  0.07 :     AL   CC    NB
+  0.64  0.04 :     AL   MF    NB
+  0.79  0.05 :     LCA  BP    NB
+  0.79  0.06 :     LCA  CC    NB
+  0.70  0.05 :     LCA  MF    NB
+  0.81  0.06 :     OLCA BP    NB
+  0.81  0.06 :     OLCA CC    NB
+  0.69  0.05 :     OLCA MF    NB
+  0.70  0.06 :     SPA  BP    NB
+  0.67  0.06 :     SPA  CC    NB
+  0.63  0.06 :     SPA  MF    NB
+  0.69  0.05 :     SPS  BP    NB
+  0.70  0.06 :     SPS  CC    NB
+  0.64  0.03 :     SPS  MF    NB
+  0.84  0.06 :     ULCA BP    NB
+  0.83  0.04 :     ULCA CC    NB
+  0.72  0.06 :     ULCA MF    NB
+  0.78  0.05 :     WLCA BP    NB
+  0.81  0.05 :     WLCA CC    NB
+  0.69  0.06 :     WLCA MF    NB
+SUMMARY: encoding, classifier
+  AUC|mean:std
+  0.64  0.13 :     AA   NB
+  0.70  0.25 :     AC   NB
+  0.75  0.27 :     ACA  NB
+  0.65  0.10 :     AL   NB
+  0.76  0.25 :     LCA  NB
+  0.77  0.33 :     OLCA NB
+  0.67  0.19 :     SPA  NB
+  0.68  0.18 :     SPS  NB
+  0.80  0.31 :     ULCA NB
+  0.76  0.29 :     WLCA NB
+SUMMARY: classifier
+  AUC|mean:std
+  0.72  1.20 :     NB
+SUMMARY: encoding
+  AUC|mean:std
+  0.64  0.13 :     AA
+  0.70  0.25 :     AC
+  0.75  0.27 :     ACA
+  0.65  0.10 :     AL
+  0.76  0.25 :     LCA
+  0.77  0.33 :     OLCA
+  0.67  0.19 :     SPA
+  0.68  0.18 :     SPS
+  0.80  0.31 :     ULCA
+  0.76  0.29 :     WLCA
+SUMMARY: ontology
+  AUC|mean:std
+  0.75  0.69 :     BP
+  0.74  0.67 :     CC
+  0.67  0.37 :     MF
+finished.
+
+
+C:\Maet\Software\Java\jdk1.6.0_21\bin\java -Xmx1400m -Didea.launcher.port=7534 "-Didea.launcher.bin.path=C:\Maet\Software\IntelliJ IDEA\bin" -Dfile.encoding=windows-1252 -classpath "C:\Maet\Software\Java\jdk1.6.0_21\jre\lib\alt-rt.jar;C:\Maet\Software\Java\jdk1.6.0_21\jre\lib\charsets.jar;C:\Maet\Software\Java\jdk1.6.0_21\jre\lib\deploy.jar;C:\Maet\Software\Java\jdk1.6.0_21\jre\lib\javaws.jar;C:\Maet\Software\Java\jdk1.6.0_21\jre\lib\jce.jar;C:\Maet\Software\Java\jdk1.6.0_21\jre\lib\jsse.jar;C:\Maet\Software\Java\jdk1.6.0_21\jre\lib\management-agent.jar;C:\Maet\Software\Java\jdk1.6.0_21\jre\lib\plugin.jar;C:\Maet\Software\Java\jdk1.6.0_21\jre\lib\resources.jar;C:\Maet\Software\Java\jdk1.6.0_21\jre\lib\rt.jar;C:\Maet\Software\Java\jdk1.6.0_21\jre\lib\ext\dnsns.jar;C:\Maet\Software\Java\jdk1.6.0_21\jre\lib\ext\localedata.jar;C:\Maet\Software\Java\jdk1.6.0_21\jre\lib\ext\sunjce_provider.jar;C:\Maet\Software\Java\jdk1.6.0_21\jre\lib\ext\sunmscapi.jar;C:\Maet\Software\Java\jdk1.6.0_21\jre\lib\ext\sunpkcs11.jar;C:\Maet\Projects\Scala\PPII\out\production\PPII;C:\Maet\Projects\Scala\libs\scala;C:\Maet\Projects\Scala\libs\scala\scala-compiler.jar;C:\Maet\Projects\Scala\libs\scala\scala-library.jar;C:\Maet\Projects\Scala\libs\scala\scalap.jar;C:\Maet\Projects\Scala\libs\scala\scala-swing.jar;C:\Maet\Projects\Scala\libs\scala\scala-dbc.jar;C:\Maet\Projects\Scala\libs\scala\jline.jar;C:\Maet\Projects\Scala\libs\scalatest\scalatest-1.2.jar;C:\Maet\Projects\Scala\libs\colt\lib;C:\Maet\Projects\Scala\libs\colt\lib\colt.jar;C:\Maet\Projects\Scala\libs\colt\lib\concurrent.jar;C:\Maet\Projects\Scala\libs\nlo\nlo.jar;C:\Maet\Projects\Scala\libs\weka;C:\Maet\Projects\Scala\libs\weka\weka-src.jar;C:\Maet\Projects\Scala\libs\weka\weka.jar;C:\Maet\Projects\Scala\libs\bdbxml;C:\Maet\Projects\Scala\libs\bdbxml\db.jar;C:\Maet\Projects\Scala\libs\bdbxml\dbxml.jar;C:\Maet\Projects\Scala\libs\basex;C:\Maet\Projects\Scala\libs\basex\BaseX61.jar;C:\Maet\Projects\Scala\libs\basex\BaseX61-xmldb.jar;C:\Maet\Projects\Scala\libs\basex\BaseX61-jaxrx.jar;C:\Maet\Projects\Scala\libs\basex\src.zip;C:\Maet\Projects\Scala\libs\basex\BaseX61-xqj.jar;C:\Maet\Projects\Scala\libs\frf;C:\Maet\Projects\Scala\libs\frf\FastRandomForest-0.98-src.jar;C:\Maet\Projects\Scala\libs\frf\FastRandomForest-0.98.jar;C:\Maet\Projects\Scala\libs\jung;C:\Maet\Projects\Scala\libs\jung\collections-generic-4.01.jar;C:\Maet\Projects\Scala\libs\jung\colt-1.2.0.jar;C:\Maet\Projects\Scala\libs\jung\concurrent-1.3.4.jar;C:\Maet\Projects\Scala\libs\jung\j3d-core-1.3.1.jar;C:\Maet\Projects\Scala\libs\jung\jung-3d-2.0.1.jar;C:\Maet\Projects\Scala\libs\jung\jung-3d-demos-2.0.1.jar;C:\Maet\Projects\Scala\libs\jung\jung-algorithms-2.0.1.jar;C:\Maet\Projects\Scala\libs\jung\jung-api-2.0.1.jar;C:\Maet\Projects\Scala\libs\jung\jung-graph-impl-2.0.1.jar;C:\Maet\Projects\Scala\libs\jung\jung-io-2.0.1.jar;C:\Maet\Projects\Scala\libs\jung\jung-jai-2.0.1.jar;C:\Maet\Projects\Scala\libs\jung\jung-jai-samples-2.0.1.jar;C:\Maet\Projects\Scala\libs\jung\jung-samples-2.0.1.jar;C:\Maet\Projects\Scala\libs\jung\jung-visualization-2.0.1.jar;C:\Maet\Projects\Scala\libs\jung\stax-api-1.0.1.jar;C:\Maet\Projects\Scala\libs\jung\vecmath-1.3.1.jar;C:\Maet\Projects\Scala\libs\jung\wstx-asl-3.2.6.jar;C:\Maet\Projects\Scala\libs\libsvm;C:\Maet\Projects\Scala\libs\libsvm\libsvm.jar;C:\Maet\Software\IntelliJ IDEA\lib\idea_rt.jar" com.intellij.rt.execution.application.AppMain au.edu.imb.experiment.ppii.TopoEncoding.GOEncoding
+Loading network...
+  Network: SC_park.txt
+  proteins: 2152  interactions pos:3844
+Annotate GO terms ...
+Create interaction set...
+  interactions: pos:0 neg:0
+Ontology biological_process,  size: 2650
+Ontology cellular_component,  size: 713
+Ontology molecular_function,  size: 1081
+running...
+SUMMARY: encoding, ontology, classifier
+  AUC|mean:std
+  0.65  0.20 :	 AA   BP    NB
+  0.65  0.21 :	 AA   CC    NB
+  0.63  0.20 :	 AA   MF    NB
+  0.74  0.14 :	 AC   BP    NB
+  0.73  0.16 :	 AC   CC    NB
+  0.64  0.17 :	 AC   MF    NB
+  0.74  0.14 :	 ACC   BP    NB
+  0.73  0.14 :	 ACC   CC    NB
+  0.64  0.17 :	 ACC   MF    NB
+  0.65  0.21 :	 AL   BP    NB
+  0.66  0.19 :	 AL   CC    NB
+  0.64  0.18 :	 AL   MF    NB   
+  0.79  0.13 :	 LCA  BP    NB
+  0.79  0.17 :	 LCA  CC    NB
+  0.70  0.18 :	 LCA  MF    NB
+  0.81  0.19 :	 OLCA BP    NB
+  0.81  0.14 :	 OLCA CC    NB
+  0.69  0.20 :	 OLCA MF    NB
+  0.70  0.18 :	 SPA  BP    NB
+  0.67  0.19 :	 SPA  CC    NB
+  0.63  0.19 :	 SPA  MF    NB
+  0.69  0.17 :	 SPS  BP    NB
+  0.70  0.18 :	 SPS  CC    NB
+  0.64  0.19 :	 SPS  MF    NB
+  0.84  0.14 :	 ULCA BP    NB
+  0.82  0.13 :	 ULCA CC    NB
+  0.72  0.17 :	 ULCA MF    NB
+  0.78  0.16 :	 WLCA BP    NB
+  0.81  0.15 :	 WLCA CC    NB
+  0.69  0.19 :	 WLCA MF    NB
+SUMMARY: classifier
+  AUC|mean:std
+  0.71  3.74 :	 NB
+SUMMARY: encoding
+  AUC|mean:std
+  0.64  0.38 :	 AA
+  0.70  0.79 :	 AC
+  0.70  0.78 :	 ACC
+  0.65  0.36 :	 AL
+  0.76  0.80 :	 LCA
+  0.77  1.05 :	 OLCA
+  0.67  0.57 :	 SPA
+  0.68  0.59 :	 SPS
+  0.80  0.95 :	 ULCA
+  0.76  0.90 :	 WLCA
+SUMMARY: ontology
+  AUC|mean:std
+  0.74  2.09 :	 BP
+  0.74  2.11 :	 CC
+  0.66  1.18 :	 MF
+finished.

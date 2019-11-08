@@ -1,0 +1,53 @@
+
+Loading network...
+  Network: SC_park.txt
+  proteins: 2152  interactions pos:3844
+Annotate GO terms ...
+Create interaction set...
+interactions: 7688
+Loading ontology...
+Dag size : 709
+Dag size : 1063
+Dag size : 2632
+running...
+GoEncoding:
+SUMMARY: binary, encoding, ontology, classifier
+  AUC|mean:std
+  0.85  0.05 :     BIN ULCA ALL   NB
+  0.91  0.03 :     BIN ULCA ALL   RF3
+  0.84  0.06 :     BIN ULCA BP    NB
+  0.88  0.02 :     BIN ULCA BP    RF3
+  0.82  0.03 :     BIN ULCA CC    NB
+  0.87  0.04 :     BIN ULCA CC    RF3
+  0.69  0.08 :     BIN ULCA MF    NB
+  0.73  0.06 :     BIN ULCA MF    RF3
+  0.86  0.05 :     TRI ULCA ALL   NB
+  0.91  0.02 :     TRI ULCA ALL   RF3
+  0.84  0.05 :     TRI ULCA BP    NB
+  0.88  0.04 :     TRI ULCA BP    RF3
+  0.83  0.04 :     TRI ULCA CC    NB
+  0.87  0.04 :     TRI ULCA CC    RF3
+  0.71  0.05 :     TRI ULCA MF    NB
+  0.74  0.03 :     TRI ULCA MF    RF3
+SUMMARY: classifier
+  AUC|mean:std
+  0.81  0.57 :     NB
+  0.85  0.62 :     RF3
+SUMMARY: encoding
+  AUC|mean:std
+  0.83  0.88 :     ULCA
+SUMMARY: ontology
+  AUC|mean:std
+  0.88  0.19 :     ALL
+  0.86  0.15 :     BP
+  0.85  0.16 :     CC
+  0.72  0.16 :     MF
+SUMMARY: binary
+  AUC|mean:std
+  0.82  0.65 :     BIN
+  0.83  0.60 :     TRI
+
+
+
+
+

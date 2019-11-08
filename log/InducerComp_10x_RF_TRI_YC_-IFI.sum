@@ -1,0 +1,5 @@
+SUMMARY	InducerComp_10x_RF_TRI_YC_-IFI
+VAR	binary
+COL	mean AUC	std AUC	mean ROC20	std ROC20	mean ROC50	std ROC50	mean MCC	mean F1	mean ACC	mean SN	mean SP	mean PRE	mean REC	binary
+DAT	0.74	0.71	0.60	0.92	0.55	0.58	0.39	0.66	0.68	0.64	0.73	0.73	0.64	BIN
+DAT	0.77	0.77	0.60	1.17	0.56	0.58	0.44	0.67	0.71	0.63	0.80	0.77	0.63	TRI

@@ -1,0 +1,473 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+  <head>
+    <link rev="made" href="mailto:s.maetschke@uq.edu.au">
+    <title>go2ppi</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+  </head>
+
+<body>
+
+
+
+<!-- ================================================================================ -->
+<br />
+<h1><center style=font-size:200%>go2ppi</center></h1>
+<center>Version 1.06</center>
+
+
+<!-- ================================================================================ -->
+<h1>contents</h1>
+
+<ul>
+  <li><a href="#installation">installation</a></li>
+  <li><a href="#introduction">introduction</a></li>
+  <ul>
+    <li><a href="#training">training</a></li>
+    <li><a href="#test">test</a></li>
+    <li><a href="#prediction">prediction</a></li>
+  </ul>
+  <li><a href="#usage">usage</a></li>
+  <li><a href="#example">example</a></li>
+  <li><a href="#software">software</a></li>
+  <li><a href="#problems">known problems</a></li>
+  <li><a href="#history">version history</a></li>
+  <li><a href="#contact">contact</a></li>
+  <li><a href="#references">references</a></li>
+</ul>
+
+
+
+<!-- ================================================================================ -->
+<h1><a name="installation">installation</a></h1>
+
+<p>
+Download <b>go2ppi</b> from <a href="bin/go2ppi.zip">here</a> and unpack the zip-file 
+to a folder of your choice. Then run the command <tt>go2ppi.bat test/test.cfg</tt> to ensure that everything is working properly. Compare the program output to the example output provided <a href="#example">here</a>.
+Also have a look at the configuration file <tt>go2ppi.cfg</tt>, which describes a more realistic
+application. Use <tt>go2ppi.cfg</tt> as template for your own prediction projects.
+</p>
+
+<p>
+The software runs on all platforms that support the Java Runtime Environment 
+JRE 1.6.x or higher (tested only for Windows 7 but should work under Unix and Mac as well). To test whether Java is installed run <tt>java -version</tt>. The console output should be similar to 
+this:
+<pre>
+java version "1.6.0_22"
+Java(TM) SE Runtime Environment (build 1.6.0_22-b04)
+Java HotSpot(TM) Client VM (build 17.1-b03, mixed mode, sharing)
+</pre>
+
+If Java is not installed, download the Java runtime environment from <a href="http://java.sun.com/products/archive">http://java.sun.com/products/archive</a>
+and run the installer.
+
+
+
+
+<!-- ================================================================================ -->
+<h1><a name="introduction">introduction</a></h1>
+
+<p>
+<b>go2ppi</b> is a predictor for protein-protein interactions (PPI) based on Gene Ontology (GO) annotations. The predictor reads a list of protein identifiers with their corresponding GO annotations. It generates a list of protein pairs with a confidence value, which indicates whether two proteins are likely to interact or not (for details see the <a href="#references">paper</a>). When using the predictor three phases are to be distinguished, which are described in the following. 
+</p>
+
+
+<!-- ================================================================================ -->
+<h2><a name="training">training</a></h2>
+
+<p>
+During the training phase the predictor learns from a given interaction network,
+the Gene Ontology, and proteins annotated with GO terms to infer interactions
+between proteins. Required input data are 
+</p>
+
+<ul>
+<li>the Gene Ontology in OBO format,<br \>
+   It is provided but the lastest version can be downloaded from
+   <a href="http://www.geneontology.org/ontology/obo_format_1_2/gene_ontology.1_2.obo">here</a>.   
+</li><br \>
+<li>a list of annotated proteins,<br \> 
+   Each row must contain the protein accession number followed by a tab followed
+   by a comma separated list of GO terms. Here a shortened example:
+   <pre style="font-size: 90%" >      
+   P32837	GO:0000329,GO:0016021,GO:0015495,GO:0015489
+   Q12044	GO:0005737,GO:0005515
+   ...
+   </pre>
+   <b>Note</b>: The annotation file must contain all proteins used during training,
+   test or prediction and the same file must be used for all three phases!    
+   Annotation files can be generated with the provided <tt>id2go.bat</tt> tool.
+   It takes a file containing protein accession numbers (e.g. a list or a network),
+   retrieves GO annotations from Uniprot (internet connection is required) and outputs 
+   an annotation file in the format described above.   
+ 
+</li><br \>   
+<li>and a network file describing a protein-protein interaction network as an edge list.<br \>
+   Each row must contain the accession numbers of the two interacting proteins 
+   separated by a tab.
+   Here an example:
+   <pre style="font-size: 90%">   
+   P11972	P38853
+   P33299	P22141
+   P20676	Q02821
+   ... 
+   </pre> 
+   <b>Note</b>: The edge list may contain additional columns that are ignored.
+   Important: All protein accession numbers must be contained within the annotations
+   file.
+
+</li>  
+</ul>
+   
+When the training is finished the <b>go2ppi</b> program writes a model file (.mdl) that contains the
+generated predictor, which is required for the subsequent test or prediction phases.   
+
+A typical console output of the training phase is shown below:
+<pre style="font-size: 90%">
+TRAINING
+  predictor: RF
+  loading network: data/SC.net
+  annotating network: data/SC_uniprot.anno
+  loading ontology: data/go.obo 
+  extracting sub-ontologies: BP,CC
+  creating training data
+  training predictor
+  saving predictor: data/SC.mdl
+  finished.
+</pre>
+
+
+<!-- ================================================================================ -->
+<h2><a name="test">test</a></h2>
+
+<p>
+The test phase is optional. It performs a cross-validation test to estimate the
+prediction accuracy of the predictor on new data. Prediction accuracy is reported
+as AUC (Area under the ROC curve). A value of 0.5 means random guessing while
+an AUC of 1.0 indicates a perfect predictor. Typical AUCs for this kind of problem range
+from 0.7 to 0.9.
+</p>
+<p>
+The testing phase requires the same input data as the training phase.
+A typical console output of the testing phase is shown below:
+</p>
+<pre style="font-size: 90%">
+TESTING
+  loading predictor: data/SC.mdl
+  loading network: data/SC.net
+  annotating network: data/SC_uniprot.anno
+  loading ontology: data/go.obo 
+  extracting sub-ontologies: BP,CC
+  creating test data
+  testing predictor
+  5 fold x-validation AUC = 0.907
+  finished.
+</pre>
+
+
+<!-- ================================================================================ -->
+<h2><a name="prediction">prediction</a></h2>
+
+<p>
+Prediction is the application of the predictor to new data.	All proteins, which predictions 
+are to be generated for, have to be listed within the annotations file (.anno) used for the training 
+of the predictor. Furthermore, no predictions are possible for proteins without GO annotation nor
+can self-interactions be predicted.
+</p>
+<p>
+In addition to the file required for training also an input file with the proteins
+to predict interactions for is needed. This input file must have the same format
+(but not necessarily the same content) as the annotations file, such as the
+protein accession numbers and list of GO terms. Here an example:
+</p>
+<pre style="font-size: 90%">
+   P32837	GO:0000329,GO:0016021,GO:0015495,GO:0015489
+   Q12044	GO:0005737,GO:0005515
+   ...
+</pre>
+<p>   
+The prediction phase generates an output file that contains protein pairs given
+by their accession numbers and a score (in the interval 0..1), which indicates  
+the confidence/strength of the interaction. 0 means there is no interaction
+and 1 indicates a highly confident prediction of an interaction. In the following
+a short example of an output file:
+</p>
+<pre style="font-size: 90%">
+   P53012 P36018 0.520
+   P53012 P32259 0.530
+   P53012 P11746 0.130
+   P53012 P40465 0.170
+   P53012 P17536 0.250
+   P53012 P38265 0.250
+   ...
+</pre>
+<p>   
+Note that the predictions file can get very large (several GB), since it contains
+the confidence scores for all possible pairings of proteins (excluding self-parings).
+To reduce the size a <a name="threshold"><b>threshold</b></a> can be specified to report only interactions with
+a confidence score above or equal to the given threshold.
+</p>
+<p>   
+A typical console output of the prediction phase is shown below:
+</p>
+<pre style="font-size: 90%">
+PREDICTING
+  loading predictor: data/SC.mdl
+  loading ontology: data/go.obo 
+  extracting sub-ontologies: BP,CC
+  loading inputs: data/SC.anno
+  predicting...
+  0.5 %
+  ...
+  100.0 %
+  finished. 
+</pre>
+<p>
+Depending on the number of proteins to infer interactions for, the prediction phase
+can take very, very long (years!). The computation time grows quadratically with the number
+of proteins within the annotation file. 
+</p>
+<p>
+To shorten the overall computation time the prediction phase can be distributed on 
+multiple computers or cluster nodes by using <a name="filterfiles"><b>filter files</b></a>.
+A filter file directly lists the protein pairs to compute predictions for. Having a
+different filter file on each node allows to perform independent, parallel predictions
+of interactions and the overall computation time is essentially divided by the number
+of available nodes.
+</p>
+<p>
+To generate filter files use the <tt>gen_filter.bat</tt> tool. It reads the an annotation file (.anno) 
+and creates the given number of filter files (.fil) in the specified output folder. 
+See the following example:
+<pre>
+gen_filter.bat test\test.anno 5 test\filters
+</pre>
+This will create 5 filter files (<tt>filter1.fil</tt> ... <tt>filter5.fil</tt>) 
+in the folder <tt>test\filters</tt>. Within the configuration file (.cfg) a filter file
+is enabled and specified via the <tt>filter</tt> parameter. Here an example of a configuration file
+with filtering:
+<pre>
+mode         = PREDICT
+annotations  = test/test.anno
+ontology     = data/go.obo
+model        = test/test.mdl
+network      = test/test.ppi
+inputs       = test/test.anno
+filter       = test/filters/filter1.fil
+predictions  = test/test.pred
+self-test    = YES
+sub-ontology = BP,CC,MF
+predictor    = NB
+threshold    = 0.9
+folds        = 5
+runs         = 1
+</pre>
+</p>
+<p>
+Note that filter files are used only during the prediction phase and therefore do
+not allow to distribute and accelerate the training or test phase. However the
+training and test phase are typically much faster and do not pose a problem.
+When the prediction is performed in a distributed fashion the overall prediction result
+is simply generated by aggregating the output files for the individual
+computers or nodes. 
+</p>
+
+
+
+
+<!-- ================================================================================ -->
+<h1><a name="usage">usage</a></h1>
+
+<p><b>go2ppi</b> is invoked from the command line using the following format:</p>
+<pre>
+go2ppi.bat configuration_file [parameter_overrides]
+</pre>
+
+<tt>configuration_file</tt> is a configuration file (.cf) that contains all parameter settings 
+(e.g. file paths) required to run <b>go2ppi</b>. See the <tt>go2ppi.cfg</tt> configuration 
+file for details. Input and output files are specified within the configuration file.
+In its simplest form <b>go2ppi</b> can be started as follows:
+<pre>
+go2ppi.bat go2ppi.cfg
+</pre>
+
+<tt>[parameter_overrides]</tt> is an optional list of parameter settings to override settings
+within the configuration file. Here an example, which overrides the parameters 
+<tt>predictor</tt> and <tt>sub-ontology</tt>:
+<pre>
+go2ppi.bat go2ppi.cfg predictor=NB sub-ontology=BP,CC
+</pre>
+This allows to use a configuration file with standard settings but to run the software
+for different case-specific settings from the command line without the need to modify
+the configuration file.
+
+
+
+<!-- ================================================================================ -->
+<h1><a name="example">example</a></h1>
+
+<p>
+Here an example output of <b>go2ppi</b> when running the test example via <tt>go2ppi.bat test\test.cfg</tt>.
+Computation should finish within a few minutes and the <tt>test</tt> folder should then contain
+two new files: <tt>test.mdl</tt> and <tt>test.pred</tt>
+</p>
+
+<pre style="font-size: 90%">
+go2ppi
+Version 1.05
+config file: test\test.cfg
+SETTINGS
+  predictor       = 'NB'
+  network         = 'test/test.ppi'
+  self-test       = 'YES'
+  runs            = '1'
+  threshold       = '0.9'
+  model           = 'test/test.mdl'
+  sub-ontology    = 'BP,CC,MF'
+  mode            = 'TRAIN,TEST,PREDICT'
+  annotations     = 'test/test.anno'
+  inputs          = 'test/test.anno'
+  ontology        = 'data/go.obo'
+  folds           = '5'
+  predictions     = 'test/test.pred'
+TRAINING
+  predictor: NB
+  loading network: test/test.ppi
+  annotating network: test/test.anno
+  loading ontology: data/go.obo
+  extracting sub-ontologies: BP,CC,MF
+  creating training data
+  training predictor
+  saving predictor: test/test.mdl
+  performing self-test: YES
+  self-test AUC = 0.980
+  finished.
+TESTING
+  loading predictor: test/test.mdl
+  loading network: test/test.ppi
+  annotating network: test/test.anno
+  loading ontology: data/go.obo
+  extracting sub-ontologies: BP,CC,MF
+  creating test data
+  testing predictor
+  5 fold x-validation AUC = 0.896
+  finished.
+PREDICTING
+  loading predictor: test/test.mdl
+  loading ontology: data/go.obo
+  extracting sub-ontologies: BP,CC,MF
+  loading inputs: test/test.anno
+  predicting...
+  100.0 %
+finished.
+</pre>
+
+
+<p>
+To run your own experiment call <tt>go2ppi.bat go2ppi.cfg</tt> with a configuration file
+(go2ppi.cfg) that links to your data.
+</p>
+
+
+
+<!-- ================================================================================ -->
+<h1><a name="software">Software</a></h1>
+
+<p>
+<b>go2ppi</b> is written in <a href="http://www.scala-lang.org/">Scala</a> (Version 2.9),
+and runs under the Java Runtime Environment 1.6 or later. The source code is available upon request. 
+Note that <b>go2ppi</b> is part of a rather large library and modifications might be challenging
+to implement. 
+</p>
+
+
+<!-- ================================================================================ -->
+<h1><a name="problems">known problems</a></h1>
+
+<h3>java.lang.StackOverflowError</h3>
+<p>
+For large Gene Ontologies or PPI data sets the software might report a 
+java.lang.StackOverflowError when reading the model file of a predictor 
+(e.g. TEST or PREDICT mode). In this case the stack size for the Java runtime 
+environment needs to be increased by changing the option -Xss in go2ppi.bat.
+For instance, increase from -Xss100M to -Xss200M. Note that an error will occur
+if the values for stack (-Xss) or heap (-Xmx) size are too large. See below.
+</p>
+
+<h3>Could not create the Java virtual machine</h3>
+<p>
+If the values for stack (-Xss) or heap (-Xmx) size, which are specified
+in go2ppi.bat, are too large the Java runtime environment will report an error
+"Could not create the Java virtual machine". What is too large and what not
+depends on the amount of main memory available on your computer.
+</p>
+
+<h3>Prediction file gets too large</h3>
+<p>
+Set the <a href="#threshold">threshold</a> for reported predictions to a higher value.
+</p>
+
+<h3>Prediction takes too long</h3>
+<p>
+The time to predict interactions grows quadratically with the number of proteins, since
+predictions for all possible pairs (excluding self-pairings) need to be computed.
+See <a href="#filterfiles">filter files</a> as a method to speed up the prediction phase by distributing the
+computation on multiple computers or cluster nodes.
+Note that filter files will not allow you to accelerate the training or test phase.
+</p>
+
+
+
+
+
+<!-- ================================================================================ -->
+<h1><a name="history">history</a></h1>
+
+<br>
+<table border="1" width = "70%" >
+<tr><th>version</th><th>date</th><th>description</th></tr>
+<tr><td>1.06</td><td>21.06.12</td>
+    <td>Memory consumption of gen_filters reduced (dramatically). 
+	    Error with multiple parameters for go2ppi.bat fixed. 
+		Shell scripts added.</td>
+<tr><td>1.05</td><td>08.06.12</td>
+    <td>Filter files to parallelize go2ppi introduced and gen_filters.bat provided. go.obo updated</td>
+<tr><td>1.02</td><td>22.11.11</td>
+    <td>Whitespaces from config values trimmed</td>
+<tr><td>1.01</td><td>02.08.11</td>
+    <td>Regulatory links filtered out of Gene ontology graph</td>
+<tr><td>1.00</td><td>16.07.11</td>
+    <td>First public version</td>
+</tr>
+</table>
+
+
+
+<!-- ================================================================================ -->
+<h1><a name="contact">contact</a></h1>
+
+<table border="1" width = "70%" >
+  <tr><th>name</th><th>email</th></tr>
+  <tr><td>Stefan Maetschke</td><td>s.maetschke@uq.edu.au</td></tr>
+  <tr><td>Mark Ragan</td><td>m.ragan@uq.edu.au</td></tr>
+</table>
+
+
+<!-- ================================================================================ -->
+<h1><a name="references">references</a></h1>
+
+
+<p>
+<i>Stefan R. Maetschke, Martin Simonsen, Melissa J. Davis, Mark A. Ragan</i> <br/>
+<a href="papers/GO2ppi.pdf">Gene Ontology driven inference of protein-protein interactions using inducers</a> <br/>
+Bioinformatics. 2011<br/>
+<br/>
+<a href="papers/Supplementary.pdf">Supplementary material</a>  <br/>
+</p>
+
+
+</body>
+</html>
+

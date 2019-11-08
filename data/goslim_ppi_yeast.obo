@@ -1,0 +1,1102 @@
+format-version: 1.2
+data_version: 1.0
+date: 07:12:2010 11:13
+saved-by: stefan
+synonymtypedef: systematic_synonym "Systematic synonym" EXACT
+subsetdef: goslim_candida "Candida GO slim"
+subsetdef: goslim_generic "Generic GO slim"
+subsetdef: goslim_goa "GOA and proteome slim"
+subsetdef: goslim_pir "PIR GO slim"
+subsetdef: goslim_plant "Plant GO slim"
+subsetdef: goslim_pombe "Fission yeast GO slim"
+subsetdef: goslim_yeast "Yeast GO slim"
+subsetdef: gosubset_prok "Prokaryotic GO subset"
+subsetdef: unvetted "unvetted"
+remark: Created by training a random forest (500 trees) on a yest dataset (21k pos, 21k neg interactions)
+remark: for the three ontologies (CC,BP,MF). Then calculating importance (GINI index) of the GO terms and
+remark: extracting 10 most important from CC and MF, and the 50 most important from BP.
+
+[Term]
+id: GO:0006461
+name: protein complex assembly
+namespace: biological_process
+def: "The aggregation, arrangement and bonding together of a set of components to form a protein complex." [GOC:ai]
+subset: goslim_pombe
+subset: gosubset_prok
+synonym: "chaperone activity" RELATED []
+synonym: "protein complex biosynthesis" EXACT []
+synonym: "protein complex formation" EXACT []
+is_a: GO:0065003 ! macromolecular complex assembly
+is_a: GO:0071822 ! protein complex subunit organization
+relationship: part_of GO:0070271 ! protein complex biogenesis
+
+[Term]
+id: GO:0019219
+name: regulation of nucleobase, nucleoside, nucleotide and nucleic acid metabolic process
+namespace: biological_process
+def: "Any cellular process that modulates the frequency, rate or extent of the chemical reactions and pathways involving nucleobases, nucleosides, nucleotides and nucleic acids." [GOC:go_curators]
+subset: gosubset_prok
+synonym: "regulation of nucleobase, nucleoside, nucleotide and nucleic acid metabolism" EXACT []
+is_a: GO:0031323 ! regulation of cellular metabolic process
+is_a: GO:0051171 ! regulation of nitrogen compound metabolic process
+is_a: GO:0080090 ! regulation of primary metabolic process
+relationship: regulates GO:0006139 ! nucleobase, nucleoside, nucleotide and nucleic acid metabolic process
+
+[Term]
+id: GO:0022613
+name: ribonucleoprotein complex biogenesis
+namespace: biological_process
+def: "The cellular process by which a complex containing RNA and proteins is synthesized, aggregates, and bonds together. Includes the biosynthesis of the constituent RNA and protein molecules, and those macromolecular modifications that are involved in synthesis or assembly of the ribonucleoprotein complex." [GOC:isa_complete, GOC:mah]
+subset: gosubset_prok
+synonym: "ribonucleoprotein complex biogenesis and assembly" EXACT [GOC:mah]
+synonym: "RNA-protein complex biogenesis" EXACT [GOC:mah]
+is_a: GO:0071843 ! cellular component biogenesis at cellular level
+
+[Term]
+id: GO:0009059
+name: macromolecule biosynthetic process
+namespace: biological_process
+alt_id: GO:0043284
+def: "The chemical reactions and pathways resulting in the formation of a macromolecule, any molecule of high relative molecular mass, the structure of which essentially comprises the multiple repetition of units derived, actually or conceptually, from molecules of low relative molecular mass." [CHEBI:33694, GOC:mah]
+subset: gosubset_prok
+synonym: "biopolymer biosynthetic process" EXACT [GOC:mtg_chebi_dec09]
+synonym: "macromolecule anabolism" EXACT []
+synonym: "macromolecule biosynthesis" EXACT []
+synonym: "macromolecule formation" EXACT []
+synonym: "macromolecule synthesis" EXACT []
+is_a: GO:0009058 ! biosynthetic process
+is_a: GO:0043170 ! macromolecule metabolic process
+
+[Term]
+id: GO:0051252
+name: regulation of RNA metabolic process
+namespace: biological_process
+def: "Any process that modulates the frequency, rate or extent of the chemical reactions and pathways involving RNA." [GOC:ai]
+subset: gosubset_prok
+synonym: "regulation of RNA metabolism" EXACT []
+is_a: GO:0019219 ! regulation of nucleobase, nucleoside, nucleotide and nucleic acid metabolic process
+is_a: GO:0060255 ! regulation of macromolecule metabolic process
+relationship: regulates GO:0016070 ! RNA metabolic process
+
+[Term]
+id: GO:0016070
+name: RNA metabolic process
+namespace: biological_process
+def: "The cellular chemical reactions and pathways involving RNA, ribonucleic acid, one of the two main type of nucleic acid, consisting of a long, unbranched macromolecule formed from ribonucleotides joined in 3',5'-phosphodiester linkage." [ISBN:0198506732 "Oxford Dictionary of Biochemistry and Molecular Biology"]
+subset: goslim_candida
+subset: goslim_pir
+subset: goslim_yeast
+subset: gosubset_prok
+synonym: "RNA metabolism" EXACT []
+xref: Reactome:1006928 "Metabolism of RNA"
+xref: Reactome:1025201 "Metabolism of RNA"
+xref: Reactome:1052235 "Metabolism of RNA"
+xref: Reactome:1077174 "Metabolism of RNA"
+xref: Reactome:1097649 "Metabolism of RNA"
+xref: Reactome:1116940 "Metabolism of RNA"
+xref: Reactome:1140787 "Metabolism of RNA"
+xref: Reactome:1171026 "Metabolism of RNA"
+xref: Reactome:1192744 "Metabolism of RNA"
+xref: Reactome:1207076 "Metabolism of RNA"
+xref: Reactome:1221550 "Metabolism of RNA"
+xref: Reactome:1239533 "Metabolism of RNA"
+xref: Reactome:1247185 "Metabolism of RNA"
+xref: Reactome:1252834 "Metabolism of RNA"
+xref: Reactome:1258644 "Metabolism of RNA"
+xref: Reactome:1262225 "Metabolism of RNA"
+xref: Reactome:532600 "Metabolism of RNA"
+xref: Reactome:980323 "Metabolism of RNA"
+is_a: GO:0044260 ! cellular macromolecule metabolic process
+is_a: GO:0090304 ! nucleic acid metabolic process
+
+[Term]
+id: GO:0071844
+name: cellular component assembly at cellular level
+namespace: biological_process
+def: "A process that is carried out at the cellular level and results in the aggregation, arrangement and bonding together of a cellular component." [GOC:mah]
+is_a: GO:0022607 ! cellular component assembly
+is_a: GO:0071842 ! cellular component organization at cellular level
+
+[Term]
+id: GO:0006605
+name: protein targeting
+namespace: biological_process
+def: "The process of targeting specific proteins to particular membrane-bounded subcellular organelles. Usually requires an organelle specific protein sequence motif." [GOC:ma]
+subset: goslim_pombe
+subset: gosubset_prok
+synonym: "nascent polypeptide association" RELATED []
+synonym: "protein sorting along secretory pathway" NARROW []
+xref: Wikipedia:Protein_targeting
+is_a: GO:0006886 ! intracellular protein transport
+
+[Term]
+id: GO:0031323
+name: regulation of cellular metabolic process
+namespace: biological_process
+def: "Any process that modulates the frequency, rate or extent of the chemical reactions and pathways by which individual cells transform chemical substances." [GOC:mah]
+subset: gosubset_prok
+synonym: "regulation of cellular metabolism" EXACT []
+is_a: GO:0019222 ! regulation of metabolic process
+is_a: GO:0050794 ! regulation of cellular process
+relationship: regulates GO:0044237 ! cellular metabolic process
+
+[Term]
+id: GO:0051234
+name: establishment of localization
+namespace: biological_process
+def: "The directed movement of a cell, substance or cellular entity, such as a protein complex or organelle, to a specific location." [GOC:ai]
+subset: goslim_pir
+subset: gosubset_prok
+is_a: GO:0008150 ! biological_process
+relationship: part_of GO:0051179 ! localization
+
+[Term]
+id: GO:0051276
+name: chromosome organization
+namespace: biological_process
+alt_id: GO:0007001
+alt_id: GO:0051277
+def: "A process that is carried out at the cellular level that results in the assembly, arrangement of constituent parts, or disassembly of chromosomes, structures composed of a very long molecule of DNA and associated proteins that carries hereditary information." [GOC:ai, GOC:dph, GOC:jl, GOC:mah]
+subset: goslim_pir
+subset: goslim_pombe
+subset: goslim_yeast
+subset: gosubset_prok
+synonym: "chromosome organisation" EXACT []
+synonym: "chromosome organization and biogenesis" RELATED [GOC:mah]
+synonym: "maintenance of genome integrity" RELATED []
+synonym: "nuclear genome maintenance" RELATED []
+is_a: GO:0006996 ! organelle organization
+
+[Term]
+id: GO:0016071
+name: mRNA metabolic process
+namespace: biological_process
+def: "The chemical reactions and pathways involving mRNA, messenger RNA, which is responsible for carrying the coded genetic 'message', transcribed from DNA, to sites of protein assembly at the ribosomes." [ISBN:0198506732 "Oxford Dictionary of Biochemistry and Molecular Biology"]
+subset: goslim_pombe
+subset: gosubset_prok
+synonym: "mRNA metabolism" EXACT []
+xref: Reactome:1007212 "Metabolism of mRNA"
+xref: Reactome:1025467 "Metabolism of mRNA"
+xref: Reactome:1052523 "Metabolism of mRNA"
+xref: Reactome:1077463 "Metabolism of mRNA"
+xref: Reactome:1097926 "Metabolism of mRNA"
+xref: Reactome:1117212 "Metabolism of mRNA"
+xref: Reactome:1141070 "Metabolism of mRNA"
+xref: Reactome:1171295 "Metabolism of mRNA"
+xref: Reactome:1192958 "Metabolism of mRNA"
+xref: Reactome:1207075 "Metabolism of mRNA"
+xref: Reactome:1221549 "Metabolism of mRNA"
+xref: Reactome:1239532 "Metabolism of mRNA"
+xref: Reactome:1247184 "Metabolism of mRNA"
+xref: Reactome:1252833 "Metabolism of mRNA"
+xref: Reactome:1258643 "Metabolism of mRNA"
+xref: Reactome:1262224 "Metabolism of mRNA"
+xref: Reactome:447010 "Metabolism of mRNA"
+xref: Reactome:980611 "Metabolism of mRNA"
+is_a: GO:0016070 ! RNA metabolic process
+
+[Term]
+id: GO:0008104
+name: protein localization
+namespace: biological_process
+def: "Any process by which a protein is transported to, or maintained in, a specific location." [GOC:ai]
+subset: gosubset_prok
+synonym: "establishment and maintenance of protein localization" EXACT []
+is_a: GO:0033036 ! macromolecule localization
+
+[Term]
+id: GO:0000279
+name: M phase
+namespace: biological_process
+def: "A cell cycle process comprising the steps by which a cell progresses through M phase, the part of the cell cycle comprising nuclear division." [GOC:dph, GOC:mah, ISBN:0815316194]
+synonym: "M-phase" EXACT []
+xref: Wikipedia:M_phase
+is_a: GO:0022403 ! cell cycle phase
+
+[Term]
+id: GO:0071840
+name: cellular component organization or biogenesis
+namespace: biological_process
+def: "A process that results in the biosynthesis of constituent macromolecules, assembly, arrangement of constituent parts, or disassembly of a cellular component." [GOC:mah]
+is_a: GO:0008150 ! biological_process
+
+[Term]
+id: GO:0006807
+name: nitrogen compound metabolic process
+namespace: biological_process
+def: "The chemical reactions and pathways involving organic or inorganic compounds that contain nitrogen, including (but not limited to) nitrogen fixation, nitrification, denitrification, assimilatory/dissimilatory nitrate reduction and the interconversion of nitrogenous organic matter and ammonium." [CHEBI:51143, GOC:go_curators, GOC:jl, ISBN:0198506732 "Oxford Dictionary of Biochemistry and Molecular Biology"]
+comment: Note that amino acid and derivative metabolism should not be annotated here. Instead use the 'amino acid and derivative metabolism' node.
+subset: goslim_pir
+subset: gosubset_prok
+synonym: "nitrogen compound metabolism" EXACT []
+is_a: GO:0008152 ! metabolic process
+
+[Term]
+id: GO:0043170
+name: macromolecule metabolic process
+namespace: biological_process
+alt_id: GO:0043283
+def: "The chemical reactions and pathways involving macromolecules, any molecule of high relative molecular mass, the structure of which essentially comprises the multiple repetition of units derived, actually or conceptually, from molecules of low relative molecular mass." [CHEBI:33694, GOC:mah]
+subset: goslim_goa
+subset: goslim_pir
+subset: gosubset_prok
+synonym: "biopolymer metabolic process" EXACT [GOC:mtg_chebi_dec09]
+synonym: "macromolecule metabolism" EXACT []
+is_a: GO:0008152 ! metabolic process
+
+[Term]
+id: GO:0050794
+name: regulation of cellular process
+namespace: biological_process
+alt_id: GO:0051244
+def: "Any process that modulates the frequency, rate or extent of a cellular process, any of those that are carried out at the cellular level, but are not necessarily restricted to a single cell. For example, cell communication occurs among more than one cell, but occurs at the cellular level." [GOC:go_curators]
+subset: gosubset_prok
+synonym: "regulation of cellular physiological process" EXACT []
+is_a: GO:0050789 ! regulation of biological process
+relationship: regulates GO:0009987 ! cellular process
+
+[Term]
+id: GO:0071841
+name: cellular component organization or biogenesis at cellular level
+namespace: biological_process
+def: "A process that is carried out at the cellular level, and results in the biosynthesis of constituent macromolecules, assembly, arrangement of constituent parts, or disassembly of a cellular component." [GOC:mah]
+is_a: GO:0009987 ! cellular process
+is_a: GO:0071840 ! cellular component organization or biogenesis
+
+[Term]
+id: GO:0016192
+name: vesicle-mediated transport
+namespace: biological_process
+alt_id: GO:0006899
+def: "The directed movement of substances into, out of or within a cell by a cellular process that begins with the formation of membrane-bounded vesicles in which the transported substances are enclosed or located in the vesicle membrane. Vesicles are then targeted to, and fuse with, an acceptor membrane." [GOC:ai, GOC:mah, ISBN:08789310662000]
+subset: goslim_candida
+subset: goslim_pir
+subset: goslim_pombe
+subset: goslim_yeast
+subset: gosubset_prok
+synonym: "nonselective vesicle transport" NARROW []
+synonym: "protein sorting along secretory pathway" RELATED []
+synonym: "vesicle trafficking" RELATED []
+synonym: "vesicle transport" EXACT []
+synonym: "vesicular transport" EXACT [GOC:mah]
+is_a: GO:0006810 ! transport
+is_a: GO:0009987 ! cellular process
+
+[Term]
+id: GO:0019538
+name: protein metabolic process
+namespace: biological_process
+alt_id: GO:0006411
+def: "The chemical reactions and pathways involving a specific protein, rather than of proteins in general. Includes protein modification." [GOC:ma]
+subset: goslim_generic
+subset: goslim_pir
+subset: goslim_plant
+subset: gosubset_prok
+synonym: "protein metabolic process and modification" EXACT []
+synonym: "protein metabolism" EXACT []
+synonym: "protein metabolism and modification" EXACT []
+xref: Wikipedia:Protein_metabolism
+is_a: GO:0043170 ! macromolecule metabolic process
+is_a: GO:0044238 ! primary metabolic process
+
+[Term]
+id: GO:0010467
+name: gene expression
+namespace: biological_process
+def: "The process by which a gene's sequence is converted into a mature gene product or products (proteins or RNA). This includes the production of an RNA transcript as well as any processing to produce a mature RNA product or an mRNA (for protein-coding genes) and the translation of that mRNA into protein. Some protein processing events may be included when they are required to form an active form of a product from an inactive precursor form." [GOC:dph, GOC:tb]
+subset: gosubset_prok
+xref: Reactome:1006441 "Gene Expression"
+xref: Reactome:1024783 "Gene Expression"
+xref: Reactome:1051745 "Gene Expression"
+xref: Reactome:1076702 "Gene Expression"
+xref: Reactome:1097220 "Gene Expression"
+xref: Reactome:1116505 "Gene Expression"
+xref: Reactome:1140321 "Gene Expression"
+xref: Reactome:1170570 "Gene Expression"
+xref: Reactome:1192387 "Gene Expression"
+xref: Reactome:1206581 "Gene Expression"
+xref: Reactome:1221214 "Gene Expression"
+xref: Reactome:1239198 "Gene Expression"
+xref: Reactome:1246779 "Gene Expression"
+xref: Reactome:1252532 "Gene Expression"
+xref: Reactome:1258323 "Gene Expression"
+xref: Reactome:1262022 "Gene Expression"
+xref: Reactome:1264209 "Gene Expression"
+xref: Reactome:1265616 "Gene Expression"
+xref: Reactome:1266830 "Gene Expression"
+xref: Reactome:74160 "Gene Expression"
+xref: Reactome:979848 "Gene Expression"
+xref: Wikipedia:Gene_expression
+is_a: GO:0043170 ! macromolecule metabolic process
+
+[Term]
+id: GO:0019752
+name: carboxylic acid metabolic process
+namespace: biological_process
+def: "The chemical reactions and pathways involving carboxylic acids, any organic acid containing one or more carboxyl (COOH) groups or anions (COO-)." [ISBN:0198506732 "Oxford Dictionary of Biochemistry and Molecular Biology"]
+subset: gosubset_prok
+synonym: "carboxylic acid metabolism" EXACT []
+is_a: GO:0043436 ! oxoacid metabolic process
+
+[Term]
+id: GO:0090304
+name: nucleic acid metabolic process
+namespace: biological_process
+def: "Any cellular metabolic process involving nucleic acids." [GOC:dph, GOC:tb]
+is_a: GO:0006139 ! nucleobase, nucleoside, nucleotide and nucleic acid metabolic process
+
+[Term]
+id: GO:0006281
+name: DNA repair
+namespace: biological_process
+def: "The process of restoring DNA after damage. Genomes are subject to damage by chemical and physical agents in the environment (e.g. UV and ionizing radiations, chemical mutagens, fungal and bacterial toxins, etc.) and by free radicals or alkylating agents endogenously generated in metabolism. DNA is also damaged because of errors during its replication. A variety of different DNA repair pathways have been reported that include direct reversal, base excision repair, nucleotide excision repair, photoreactivation, bypass, double-strand break repair pathway, and mismatch repair pathway." [PMID:11563486]
+subset: goslim_pir
+subset: goslim_pombe
+subset: gosubset_prok
+xref: Reactome:1006476 "DNA Damage Reversal"
+xref: Reactome:1006477 "DNA Repair"
+xref: Reactome:1024802 "DNA Damage Reversal"
+xref: Reactome:1024803 "DNA Repair"
+xref: Reactome:1051781 "DNA Damage Reversal"
+xref: Reactome:1051782 "DNA Repair"
+xref: Reactome:1076732 "DNA Damage Reversal"
+xref: Reactome:1076733 "DNA Repair"
+xref: Reactome:1097247 "DNA Damage Reversal"
+xref: Reactome:1097248 "DNA Repair"
+xref: Reactome:1116540 "DNA Damage Reversal"
+xref: Reactome:1116541 "DNA Repair"
+xref: Reactome:1140357 "DNA Damage Reversal"
+xref: Reactome:1140358 "DNA Repair"
+xref: Reactome:1170600 "DNA Damage Reversal"
+xref: Reactome:1170601 "DNA Repair"
+xref: Reactome:1192421 "DNA Damage Reversal"
+xref: Reactome:1192422 "DNA Repair"
+xref: Reactome:1206617 "DNA Damage Reversal"
+xref: Reactome:1206618 "DNA Repair"
+xref: Reactome:1221251 "DNA Repair"
+xref: Reactome:1221337 "DNA Damage Reversal"
+xref: Reactome:1239235 "DNA Repair"
+xref: Reactome:1239320 "DNA Damage Reversal"
+xref: Reactome:1246802 "DNA Damage Reversal"
+xref: Reactome:1246803 "DNA Repair"
+xref: Reactome:1252559 "DNA Damage Reversal"
+xref: Reactome:1252560 "DNA Repair"
+xref: Reactome:1258355 "DNA Repair"
+xref: Reactome:1262055 "DNA Repair"
+xref: Reactome:1264219 "DNA Damage Reversal"
+xref: Reactome:1264220 "DNA Repair"
+xref: Reactome:1265625 "DNA Damage Reversal"
+xref: Reactome:1265626 "DNA Repair"
+xref: Reactome:1266763 "DNA Damage Reversal"
+xref: Reactome:1266764 "DNA Repair"
+xref: Reactome:73894 "DNA Repair"
+xref: Reactome:73942 "DNA Damage Reversal"
+xref: Reactome:979881 "DNA Damage Reversal"
+xref: Reactome:979882 "DNA Repair"
+xref: Wikipedia:DNA_repair
+is_a: GO:0006259 ! DNA metabolic process
+is_a: GO:0006974 ! response to DNA damage stimulus
+
+[Term]
+id: GO:0008152
+name: metabolic process
+namespace: biological_process
+def: "The chemical reactions and pathways, including anabolism and catabolism, by which living organisms transform chemical substances. Metabolic processes typically transform small molecules, but also include macromolecular processes such as DNA repair and replication, and protein synthesis and degradation." [GOC:go_curators, ISBN:0198547684]
+comment: Note that metabolic processes do not include single functions or processes such as protein-protein interactions, protein-nucleic acids, nor receptor-ligand interactions.
+subset: goslim_generic
+subset: goslim_goa
+subset: goslim_pir
+subset: goslim_plant
+subset: gosubset_prok
+synonym: "metabolic process resulting in cell growth" NARROW []
+synonym: "metabolism" EXACT []
+synonym: "metabolism resulting in cell growth" NARROW []
+xref: Wikipedia:Metabolism
+is_a: GO:0008150 ! biological_process
+
+[Term]
+id: GO:0045449
+name: regulation of transcription
+namespace: biological_process
+alt_id: GO:0061019
+def: "Any process that modulates the frequency, rate or extent of the synthesis of either RNA on a template of DNA or DNA on a template of RNA." [ISBN:0198506732 "Oxford Dictionary of Biochemistry and Molecular Biology"]
+subset: gosubset_prok
+synonym: "regulation of cellular transcription" EXACT []
+is_a: GO:0010468 ! regulation of gene expression
+is_a: GO:0019219 ! regulation of nucleobase, nucleoside, nucleotide and nucleic acid metabolic process
+is_a: GO:2000112 ! regulation of cellular macromolecule biosynthetic process
+relationship: regulates GO:0006350 ! transcription
+
+[Term]
+id: GO:0006351
+name: transcription, DNA-dependent
+namespace: biological_process
+alt_id: GO:0061022
+def: "The cellular synthesis of RNA on a template of DNA." [GOC:jl]
+subset: gosubset_prok
+synonym: "cellular transcription, DNA-dependent" EXACT []
+is_a: GO:0006350 ! transcription
+is_a: GO:0032774 ! RNA biosynthetic process
+
+[Term]
+id: GO:0016043
+name: cellular component organization
+namespace: biological_process
+def: "A process that results in the assembly, arrangement of constituent parts, or disassembly of a cellular component." [GOC:ai, GOC:jl, GOC:mah]
+subset: goslim_generic
+subset: goslim_pir
+subset: goslim_plant
+subset: gosubset_prok
+synonym: "cell organisation" EXACT []
+synonym: "cell organization and biogenesis" RELATED [GOC:mah]
+is_a: GO:0071840 ! cellular component organization or biogenesis
+
+[Term]
+id: GO:0044249
+name: cellular biosynthetic process
+namespace: biological_process
+def: "The chemical reactions and pathways resulting in the formation of substances, carried out by individual cells." [GOC:jl]
+subset: gosubset_prok
+synonym: "cellular anabolism" EXACT []
+synonym: "cellular biosynthesis" EXACT []
+synonym: "cellular formation" EXACT []
+synonym: "cellular synthesis" EXACT []
+is_a: GO:0009058 ! biosynthetic process
+is_a: GO:0044237 ! cellular metabolic process
+
+[Term]
+id: GO:0006810
+name: transport
+namespace: biological_process
+alt_id: GO:0015457
+alt_id: GO:0015460
+def: "The directed movement of substances (such as macromolecules, small molecules, ions) into, out of or within a cell, or between cells, or within a multicellular organism by means of some agent such as a transporter or pore." [GOC:dph, GOC:jl, GOC:mah]
+subset: goslim_candida
+subset: goslim_generic
+subset: goslim_goa
+subset: goslim_pir
+subset: goslim_plant
+subset: goslim_pombe
+subset: goslim_yeast
+subset: gosubset_prok
+synonym: "auxiliary transport protein activity" RELATED [GOC:mah]
+synonym: "small molecule transport" NARROW []
+synonym: "solute:solute exchange" NARROW []
+synonym: "transport accessory protein activity" RELATED [GOC:mah]
+is_a: GO:0051234 ! establishment of localization
+
+[Term]
+id: GO:0071842
+name: cellular component organization at cellular level
+namespace: biological_process
+def: "A process that is carried out at the cellular level and results in the assembly, arrangement of constituent parts, or disassembly of a cellular component." [GOC:mah]
+is_a: GO:0016043 ! cellular component organization
+is_a: GO:0071841 ! cellular component organization or biogenesis at cellular level
+
+[Term]
+id: GO:0045184
+name: establishment of protein localization
+namespace: biological_process
+def: "The directed movement of a protein to a specific location." [GOC:bf]
+subset: gosubset_prok
+synonym: "protein positioning" EXACT []
+synonym: "protein recruitment" EXACT []
+is_a: GO:0051234 ! establishment of localization
+relationship: part_of GO:0008104 ! protein localization
+
+[Term]
+id: GO:0046907
+name: intracellular transport
+namespace: biological_process
+def: "The directed movement of substances within a cell." [GOC:ai]
+subset: gosubset_prok
+is_a: GO:0006810 ! transport
+is_a: GO:0051649 ! establishment of localization in cell
+
+[Term]
+id: GO:0032774
+name: RNA biosynthetic process
+namespace: biological_process
+def: "The chemical reactions and pathways resulting in the formation of RNA, ribonucleic acid, one of the two main type of nucleic acid, consisting of a long, unbranched macromolecule formed from ribonucleotides joined in 3',5'-phosphodiester linkage. Includes polymerization of ribonucleotide monomers." [GOC:mah]
+synonym: "RNA anabolism" EXACT []
+synonym: "RNA biosynthesis" EXACT []
+synonym: "RNA formation" EXACT []
+synonym: "RNA synthesis" EXACT []
+is_a: GO:0016070 ! RNA metabolic process
+is_a: GO:0044249 ! cellular biosynthetic process
+
+[Term]
+id: GO:0044238
+name: primary metabolic process
+namespace: biological_process
+def: "The chemical reactions and pathways involving those compounds which are formed as a part of the normal anabolic and catabolic processes. These processes take place in most, if not all, cells of the organism." [GOC:go_curators, http://www.metacyc.org]
+subset: goslim_generic
+subset: goslim_pir
+subset: gosubset_prok
+synonym: "primary metabolism" EXACT []
+is_a: GO:0008152 ! metabolic process
+
+[Term]
+id: GO:0006259
+name: DNA metabolic process
+namespace: biological_process
+alt_id: GO:0055132
+def: "Any cellular metabolic process involving deoxyribonucleic acid. This is one of the two main types of nucleic acid, consisting of a long, unbranched macromolecule formed from one, or more commonly, two, strands of linked deoxyribonucleotides." [ISBN:0198506732 "Oxford Dictionary of Biochemistry and Molecular Biology"]
+subset: goslim_candida
+subset: goslim_generic
+subset: goslim_pir
+subset: goslim_plant
+subset: goslim_pombe
+subset: goslim_yeast
+subset: gosubset_prok
+synonym: "cellular DNA metabolism" EXACT []
+synonym: "DNA metabolism" EXACT []
+is_a: GO:0044260 ! cellular macromolecule metabolic process
+is_a: GO:0090304 ! nucleic acid metabolic process
+
+[Term]
+id: GO:0006412
+name: translation
+namespace: biological_process
+alt_id: GO:0006416
+alt_id: GO:0006453
+alt_id: GO:0043037
+def: "The cellular metabolic process by which a protein is formed, using the sequence of a mature mRNA molecule to specify the sequence of amino acids in a polypeptide chain. Translation is mediated by the ribosome, and begins with the formation of a ternary complex between aminoacylated initiator methionine tRNA, GTP, and initiation factor 2, which subsequently associates with the small subunit of the ribosome and an mRNA. Translation ends with the release of a polypeptide chain from the ribosome." [GOC:go_curators]
+subset: goslim_candida
+subset: goslim_generic
+subset: goslim_pir
+subset: goslim_plant
+subset: goslim_pombe
+subset: goslim_yeast
+subset: gosubset_prok
+synonym: "protein anabolism" EXACT []
+synonym: "protein biosynthesis" EXACT []
+synonym: "protein biosynthetic process" EXACT [GOC:curators]
+synonym: "protein formation" EXACT []
+synonym: "protein synthesis" EXACT []
+synonym: "protein translation" EXACT []
+xref: Reactome:1006458 "Translation"
+xref: Reactome:1024787 "Translation"
+xref: Reactome:1051762 "Translation"
+xref: Reactome:1076715 "Translation"
+xref: Reactome:1097230 "Translation"
+xref: Reactome:1116522 "Translation"
+xref: Reactome:1140338 "Translation"
+xref: Reactome:1170580 "Translation"
+xref: Reactome:1192404 "Translation"
+xref: Reactome:1206598 "Translation"
+xref: Reactome:1221224 "Translation"
+xref: Reactome:1239208 "Translation"
+xref: Reactome:1246783 "Translation"
+xref: Reactome:1252540 "Translation"
+xref: Reactome:1258327 "Translation"
+xref: Reactome:1262026 "Translation"
+xref: Reactome:1264252 "Translation"
+xref: Reactome:72766 "Translation"
+xref: Reactome:979865 "Translation"
+xref: Wikipedia:Translation_(genetics)
+is_a: GO:0034645 ! cellular macromolecule biosynthetic process
+is_a: GO:0044267 ! cellular protein metabolic process
+relationship: part_of GO:0010467 ! gene expression
+
+[Term]
+id: GO:0015031
+name: protein transport
+namespace: biological_process
+alt_id: GO:0015831
+def: "The directed movement of proteins into, out of or within a cell, or between cells by means of some agent such as a transporter or pore." [GOC:ai]
+subset: goslim_generic
+subset: goslim_pir
+subset: gosubset_prok
+synonym: "enzyme transport" NARROW []
+is_a: GO:0006810 ! transport
+is_a: GO:0045184 ! establishment of protein localization
+
+[Term]
+id: GO:0044237
+name: cellular metabolic process
+namespace: biological_process
+def: "The chemical reactions and pathways by which individual cells transform chemical substances." [GOC:go_curators]
+subset: goslim_pir
+subset: gosubset_prok
+synonym: "cellular metabolism" EXACT []
+synonym: "intermediary metabolism" RELATED [GOC:mah]
+is_a: GO:0008152 ! metabolic process
+is_a: GO:0009987 ! cellular process
+
+[Term]
+id: GO:0044260
+name: cellular macromolecule metabolic process
+namespace: biological_process
+alt_id: GO:0034960
+def: "The chemical reactions and pathways involving macromolecules, any molecule of high relative molecular mass, the structure of which essentially comprises the multiple repetition of units derived, actually or conceptually, from molecules of low relative molecular mass, as carried out by individual cells." [CHEBI:33694, GOC:mah]
+subset: gosubset_prok
+synonym: "cellular biopolymer metabolic process" EXACT [GOC:mtg_chebi_dec09]
+synonym: "cellular macromolecule metabolism" EXACT []
+is_a: GO:0043170 ! macromolecule metabolic process
+is_a: GO:0044237 ! cellular metabolic process
+
+[Term]
+id: GO:0009987
+name: cellular process
+namespace: biological_process
+alt_id: GO:0008151
+alt_id: GO:0050875
+def: "Any process that is carried out at the cellular level, but not necessarily restricted to a single cell. For example, cell communication occurs among more than one cell, but occurs at the cellular level." [GOC:go_curators, GOC:isa_complete]
+subset: goslim_goa
+subset: goslim_pir
+subset: goslim_plant
+subset: gosubset_prok
+synonym: "cell growth and/or maintenance" NARROW []
+synonym: "cell physiology" EXACT []
+synonym: "cellular physiological process" EXACT []
+is_a: GO:0008150 ! biological_process
+
+[Term]
+id: GO:0034645
+name: cellular macromolecule biosynthetic process
+namespace: biological_process
+alt_id: GO:0034961
+def: "The chemical reactions and pathways resulting in the formation of a macromolecule, any molecule of high relative molecular mass, the structure of which essentially comprises the multiple repetition of units derived, actually or conceptually, from molecules of low relative molecular mass, carried out by individual cells." [CHEBI:33694, GOC:mah]
+synonym: "cellular biopolymer biosynthetic process" EXACT [GOC:mtg_chebi_dec09]
+synonym: "cellular macromolecule anabolism" EXACT [GOC:mah]
+synonym: "cellular macromolecule biosynthesis" EXACT [GOC:mah]
+synonym: "cellular macromolecule formation" EXACT [GOC:mah]
+synonym: "cellular macromolecule synthesis" EXACT [GOC:mah]
+is_a: GO:0009059 ! macromolecule biosynthetic process
+is_a: GO:0044249 ! cellular biosynthetic process
+is_a: GO:0044260 ! cellular macromolecule metabolic process
+
+[Term]
+id: GO:0006464
+name: protein modification process
+namespace: biological_process
+def: "The covalent alteration of one or more amino acids occurring in proteins, peptides and nascent polypeptides (co-translational, post-translational modifications). Includes the modification of charged tRNAs that are destined to occur in a protein (pre-translation modification)." [GOC:go_curators]
+subset: goslim_candida
+subset: goslim_generic
+subset: goslim_pir
+subset: goslim_plant
+subset: goslim_yeast
+subset: gosubset_prok
+synonym: "process resulting in protein modification" RELATED []
+synonym: "protein tagging activity" RELATED []
+is_a: GO:0043412 ! macromolecule modification
+is_a: GO:0044267 ! cellular protein metabolic process
+
+[Term]
+id: GO:0034641
+name: cellular nitrogen compound metabolic process
+namespace: biological_process
+def: "The chemical reactions and pathways involving various organic and inorganic nitrogenous compounds, as carried out by individual cells." [GOC:mah]
+subset: gosubset_prok
+synonym: "cellular nitrogen compound metabolism" EXACT []
+is_a: GO:0006807 ! nitrogen compound metabolic process
+is_a: GO:0044237 ! cellular metabolic process
+
+[Term]
+id: GO:0044267
+name: cellular protein metabolic process
+namespace: biological_process
+def: "The chemical reactions and pathways involving a specific protein, rather than of proteins in general, occurring at the level of an individual cell. Includes protein modification." [GOC:jl]
+subset: gosubset_prok
+synonym: "cellular protein metabolism" EXACT []
+xref: Reactome:1006459 "Metabolism of proteins"
+xref: Reactome:1024788 "Metabolism of proteins"
+xref: Reactome:1051763 "Metabolism of proteins"
+xref: Reactome:1076716 "Metabolism of proteins"
+xref: Reactome:1097231 "Metabolism of proteins"
+xref: Reactome:1116523 "Metabolism of proteins"
+xref: Reactome:1140339 "Metabolism of proteins"
+xref: Reactome:1170581 "Metabolism of proteins"
+xref: Reactome:1192405 "Metabolism of proteins"
+xref: Reactome:1206599 "Metabolism of proteins"
+xref: Reactome:1221225 "Metabolism of proteins"
+xref: Reactome:1239209 "Metabolism of proteins"
+xref: Reactome:1246784 "Metabolism of proteins"
+xref: Reactome:1252541 "Metabolism of proteins"
+xref: Reactome:1258328 "Metabolism of proteins"
+xref: Reactome:1262027 "Metabolism of proteins"
+xref: Reactome:1264253 "Metabolism of proteins"
+xref: Reactome:1265762 "Metabolism of proteins"
+xref: Reactome:392499 "Metabolism of proteins"
+xref: Reactome:979866 "Metabolism of proteins"
+is_a: GO:0019538 ! protein metabolic process
+is_a: GO:0044260 ! cellular macromolecule metabolic process
+
+[Term]
+id: GO:0006350
+name: transcription
+namespace: biological_process
+alt_id: GO:0061018
+def: "The cellular synthesis of either RNA on a template of DNA or DNA on a template of RNA." [ISBN:0198506732 "Oxford Dictionary of Biochemistry and Molecular Biology"]
+subset: goslim_candida
+subset: goslim_generic
+subset: goslim_pir
+subset: goslim_plant
+subset: goslim_pombe
+subset: goslim_yeast
+subset: gosubset_prok
+synonym: "cellular transcription" EXACT []
+xref: Reactome:1006454 "Transcription"
+xref: Reactome:1006472 "RNA Polymerase I, RNA Polymerase III, and Mitochondrial Transcription"
+xref: Reactome:1024797 "RNA Polymerase I, RNA Polymerase III, and Mitochondrial Transcription"
+xref: Reactome:1024798 "Transcription"
+xref: Reactome:1051758 "Transcription"
+xref: Reactome:1051777 "RNA Polymerase I, RNA Polymerase III, and Mitochondrial Transcription"
+xref: Reactome:1076727 "RNA Polymerase I, RNA Polymerase III, and Mitochondrial Transcription"
+xref: Reactome:1076728 "Transcription"
+xref: Reactome:1097242 "RNA Polymerase I, RNA Polymerase III, and Mitochondrial Transcription"
+xref: Reactome:1097243 "Transcription"
+xref: Reactome:1116518 "Transcription"
+xref: Reactome:1116536 "RNA Polymerase I, RNA Polymerase III, and Mitochondrial Transcription"
+xref: Reactome:1140334 "Transcription"
+xref: Reactome:1140353 "RNA Polymerase I, RNA Polymerase III, and Mitochondrial Transcription"
+xref: Reactome:1170595 "RNA Polymerase I, RNA Polymerase III, and Mitochondrial Transcription"
+xref: Reactome:1170596 "Transcription"
+xref: Reactome:1192400 "Transcription"
+xref: Reactome:1192418 "RNA Polymerase I, RNA Polymerase III, and Mitochondrial Transcription"
+xref: Reactome:1206594 "Transcription"
+xref: Reactome:1206613 "RNA Polymerase I, RNA Polymerase III, and Mitochondrial Transcription"
+xref: Reactome:1221238 "RNA Polymerase I, RNA Polymerase III, and Mitochondrial Transcription"
+xref: Reactome:1221239 "Transcription"
+xref: Reactome:1239222 "RNA Polymerase I, RNA Polymerase III, and Mitochondrial Transcription"
+xref: Reactome:1239223 "Transcription"
+xref: Reactome:1246798 "RNA Polymerase I, RNA Polymerase III, and Mitochondrial Transcription"
+xref: Reactome:1246799 "Transcription"
+xref: Reactome:1252555 "RNA Polymerase I, RNA Polymerase III, and Mitochondrial Transcription"
+xref: Reactome:1252556 "Transcription"
+xref: Reactome:1258342 "RNA Polymerase I, RNA Polymerase III, and Mitochondrial Transcription"
+xref: Reactome:1258343 "Transcription"
+xref: Reactome:1262041 "RNA Polymerase I, RNA Polymerase III, and Mitochondrial Transcription"
+xref: Reactome:1262042 "Transcription"
+xref: Reactome:504046 "RNA Polymerase I, RNA Polymerase III, and Mitochondrial Transcription"
+xref: Reactome:74159 "Transcription"
+xref: Reactome:979861 "Transcription"
+xref: Reactome:979877 "RNA Polymerase I, RNA Polymerase III, and Mitochondrial Transcription"
+xref: Wikipedia:Transcription_(genetics)
+is_a: GO:0034645 ! cellular macromolecule biosynthetic process
+is_a: GO:0090304 ! nucleic acid metabolic process
+relationship: part_of GO:0010467 ! gene expression
+
+[Term]
+id: GO:0008150
+name: biological_process
+namespace: biological_process
+alt_id: GO:0000004
+alt_id: GO:0007582
+def: "Any process specifically pertinent to the functioning of integrated living units: cells, tissues, organs, and organisms. A process is a collection of molecular events with a defined beginning and end." [GOC:go_curators, GOC:isa_complete]
+comment: Note that, in addition to forming the root of the biological process ontology, this term is recommended for use for the annotation of gene products whose biological process is unknown. Note that when this term is used for annotation, it indicates that no information was available about the biological process of the gene product annotated as of the date the annotation was made; the evidence code ND, no data, is used to indicate this.
+subset: goslim_candida
+subset: goslim_generic
+subset: goslim_goa
+subset: goslim_pir
+subset: goslim_plant
+subset: goslim_yeast
+subset: gosubset_prok
+synonym: "biological process" EXACT []
+synonym: "biological process unknown" NARROW []
+synonym: "physiological process" EXACT []
+xref: Wikipedia:Biological_process
+disjoint_from: GO:0003674 ! molecular_function
+disjoint_from: GO:0005575 ! cellular_component
+
+[Term]
+id: GO:0006996
+name: organelle organization
+namespace: biological_process
+def: "A process that is carried out at the cellular level which results in the assembly, arrangement of constituent parts, or disassembly of an organelle within a cell. An organelle is an organized structure of distinctive morphology and function. Includes the nucleus, mitochondria, plastids, vacuoles, vesicles, ribosomes and the cytoskeleton. Excludes the plasma membrane." [GOC:mah]
+subset: goslim_candida
+subset: goslim_generic
+subset: goslim_pir
+subset: gosubset_prok
+synonym: "organelle organisation" EXACT [GOC:curators]
+synonym: "organelle organization and biogenesis" RELATED [GOC:dph, GOC:jl, GOC:mah]
+is_a: GO:0071842 ! cellular component organization at cellular level
+
+[Term]
+id: GO:0006139
+name: nucleobase, nucleoside, nucleotide and nucleic acid metabolic process
+namespace: biological_process
+alt_id: GO:0055134
+def: "Any cellular metabolic process involving nucleobases, nucleosides, nucleotides and nucleic acids." [GOC:ai]
+subset: goslim_generic
+subset: goslim_goa
+subset: goslim_pir
+subset: goslim_plant
+subset: gosubset_prok
+synonym: "cellular nucleobase, nucleoside, nucleotide and nucleic acid metabolic process" EXACT []
+synonym: "cellular nucleobase, nucleoside, nucleotide and nucleic acid metabolism" EXACT []
+synonym: "nucleobase, nucleoside, nucleotide and nucleic acid metabolism" EXACT []
+is_a: GO:0034641 ! cellular nitrogen compound metabolic process
+is_a: GO:0044238 ! primary metabolic process
+
+[Term]
+id: GO:0031981
+name: nuclear lumen
+namespace: cellular_component
+def: "The volume enclosed by the nuclear inner membrane." [GOC:mah, GOC:pz]
+is_a: GO:0044428 ! nuclear part
+is_a: GO:0070013 ! intracellular organelle lumen
+
+[Term]
+id: GO:0043229
+name: intracellular organelle
+namespace: cellular_component
+def: "Organized structure of distinctive morphology and function, occurring within the cell. Includes the nucleus, mitochondria, plastids, vacuoles, vesicles, ribosomes and the cytoskeleton. Excludes the plasma membrane." [GOC:go_curators]
+subset: goslim_pir
+subset: gosubset_prok
+is_a: GO:0043226 ! organelle
+is_a: GO:0044424 ! intracellular part
+
+[Term]
+id: GO:0005739
+name: mitochondrion
+namespace: cellular_component
+def: "A semiautonomous, self replicating organelle that occurs in varying numbers, shapes, and sizes in the cytoplasm of virtually all eukaryotic cells. It is notably the site of tissue respiration." [ISBN:0198506732 "Oxford Dictionary of Biochemistry and Molecular Biology"]
+subset: goslim_candida
+subset: goslim_generic
+subset: goslim_pir
+subset: goslim_plant
+subset: goslim_yeast
+synonym: "mitochondria" EXACT []
+xref: NIF_Subcellular:sao1860313010
+xref: Wikipedia:Mitochondrion
+is_a: GO:0043231 ! intracellular membrane-bounded organelle
+is_a: GO:0044444 ! cytoplasmic part
+
+[Term]
+id: GO:0022625
+name: cytosolic large ribosomal subunit
+namespace: cellular_component
+alt_id: GO:0005842
+alt_id: GO:0009282
+alt_id: GO:0030498
+alt_id: GO:0030872
+def: "The large subunit of the ribosome that is found in the cytosol of the cell. The cytosol is that part of the cytoplasm that does not contain membranous or particulate subcellular components. Examples of this component are found in Mus musculus, and in Bacterial and Archaeal species." [GOC:mtg_sensu]
+synonym: "50S ribosomal subunit" NARROW []
+synonym: "60S ribosomal subunit" NARROW []
+synonym: "eukaryotic ribosomal LSU" NARROW []
+synonym: "prokaryotic large ribosomal subunit" NARROW []
+is_a: GO:0015934 ! large ribosomal subunit
+is_a: GO:0044445 ! cytosolic part
+relationship: part_of GO:0022626 ! cytosolic ribosome
+
+[Term]
+id: GO:0005737
+name: cytoplasm
+namespace: cellular_component
+def: "All of the contents of a cell excluding the plasma membrane and nucleus, but including other subcellular structures." [ISBN:0198547684]
+subset: goslim_candida
+subset: goslim_generic
+subset: goslim_goa
+subset: goslim_plant
+subset: goslim_yeast
+subset: gosubset_prok
+xref: Wikipedia:Cytoplasm
+is_a: GO:0044424 ! intracellular part
+
+[Term]
+id: GO:0044428
+name: nuclear part
+namespace: cellular_component
+def: "Any constituent part of the nucleus, a membrane-bounded organelle of eukaryotic cells in which chromosomes are housed and replicated." [GOC:jl]
+synonym: "nucleus component" EXACT []
+is_a: GO:0044446 ! intracellular organelle part
+relationship: part_of GO:0005634 ! nucleus
+
+[Term]
+id: GO:0044446
+name: intracellular organelle part
+namespace: cellular_component
+def: "A constituent part of an intracellular organelle, an organized structure of distinctive morphology and function, occurring within the cell. Includes constituent parts of the nucleus, mitochondria, plastids, vacuoles, vesicles, ribosomes and the cytoskeleton but excludes the plasma membrane." [GOC:jl]
+subset: gosubset_prok
+is_a: GO:0044422 ! organelle part
+is_a: GO:0044424 ! intracellular part
+relationship: part_of GO:0043229 ! intracellular organelle
+
+[Term]
+id: GO:0044444
+name: cytoplasmic part
+namespace: cellular_component
+def: "Any constituent part of the cytoplasm, all of the contents of a cell excluding the plasma membrane and nucleus, but including other subcellular structures." [GOC:jl]
+subset: gosubset_prok
+synonym: "cytoplasm component" EXACT []
+is_a: GO:0044424 ! intracellular part
+relationship: part_of GO:0005737 ! cytoplasm
+
+[Term]
+id: GO:0043231
+name: intracellular membrane-bounded organelle
+namespace: cellular_component
+def: "Organized structure of distinctive morphology and function, bounded by a single or double lipid bilayer membrane and occurring within the cell. Includes the nucleus, mitochondria, plastids, vacuoles, and vesicles. Excludes the plasma membrane." [GOC:go_curators]
+subset: goslim_pir
+subset: gosubset_prok
+synonym: "intracellular membrane-enclosed organelle" EXACT []
+is_a: GO:0043227 ! membrane-bounded organelle
+is_a: GO:0043229 ! intracellular organelle
+
+[Term]
+id: GO:0005634
+name: nucleus
+namespace: cellular_component
+def: "A membrane-bounded organelle of eukaryotic cells in which chromosomes are housed and replicated. In most cells, the nucleus contains all of the cell's chromosomes except the organellar chromosomes, and is the site of RNA synthesis and processing. In some species, or in specialized cell types, RNA metabolism or DNA replication may be absent." [GOC:go_curators]
+subset: goslim_candida
+subset: goslim_generic
+subset: goslim_goa
+subset: goslim_pir
+subset: goslim_plant
+subset: goslim_yeast
+synonym: "cell nucleus" EXACT []
+xref: NIF_Subcellular:sao1702920020
+xref: Wikipedia:Cell_nucleus
+is_a: GO:0043231 ! intracellular membrane-bounded organelle
+
+[Term]
+id: GO:0016491
+name: oxidoreductase activity
+namespace: molecular_function
+def: "Catalysis of an oxidation-reduction (redox) reaction, a reversible chemical reaction in which the oxidation state of an atom or atoms within a molecule is altered. One substrate acts as a hydrogen or electron donor and becomes oxidized, while the other acts as hydrogen or electron acceptor and becomes reduced." [GOC:go_curators]
+comment: Note that enzymes of class EC:1.97.-.- should also be annotated to this term.
+subset: goslim_candida
+subset: goslim_goa
+subset: goslim_pir
+subset: goslim_yeast
+subset: gosubset_prok
+synonym: "oxidoreductase activity, acting on other substrates" NARROW []
+synonym: "redox activity" EXACT []
+xref: EC:1
+xref: Reactome:95 "oxidoreductase activity"
+is_a: GO:0003824 ! catalytic activity
+
+[Term]
+id: GO:0003676
+name: nucleic acid binding
+namespace: molecular_function
+def: "Interacting selectively and non-covalently with any nucleic acid." [GOC:jl]
+subset: goslim_generic
+subset: goslim_goa
+subset: goslim_pir
+subset: goslim_plant
+subset: gosubset_prok
+is_a: GO:0005488 ! binding
+
+[Term]
+id: GO:0019843
+name: rRNA binding
+namespace: molecular_function
+def: "Interacting selectively and non-covalently with ribosomal RNA." [GOC:jl]
+subset: gosubset_prok
+is_a: GO:0003723 ! RNA binding
+
+[Term]
+id: GO:0016740
+name: transferase activity
+namespace: molecular_function
+def: "Catalysis of the transfer of a group, e.g. a methyl group, glycosyl group, acyl group, phosphorus-containing, or other groups, from one compound (generally regarded as the donor) to another compound (generally regarded as the acceptor). Transferase is the systematic name for any enzyme of EC class 2." [ISBN:0198506732 "Oxford Dictionary of Biochemistry and Molecular Biology"]
+subset: goslim_candida
+subset: goslim_generic
+subset: goslim_goa
+subset: goslim_pir
+subset: goslim_plant
+subset: goslim_yeast
+subset: gosubset_prok
+xref: EC:2
+is_a: GO:0003824 ! catalytic activity
+
+[Term]
+id: GO:0003824
+name: catalytic activity
+namespace: molecular_function
+def: "Catalysis of a biochemical reaction at physiological temperatures. In biologically catalyzed reactions, the reactants are known as substrates, and the catalysts are naturally occurring macromolecular substances known as enzymes. Enzymes possess specific binding sites for substrates, and are usually composed wholly or largely of protein, but RNA that has catalytic activity (ribozyme) is often also regarded as enzymatic." [ISBN:0198506732 "Oxford Dictionary of Biochemistry and Molecular Biology"]
+subset: goslim_generic
+subset: goslim_goa
+subset: goslim_pir
+subset: goslim_plant
+subset: gosubset_prok
+synonym: "enzyme activity" EXACT [GOC:dph, GOC:tb]
+xref: Wikipedia:Enzyme
+is_a: GO:0003674 ! molecular_function
+
+[Term]
+id: GO:0003674
+name: molecular_function
+namespace: molecular_function
+alt_id: GO:0005554
+def: "Elemental activities, such as catalysis or binding, describing the actions of a gene product at the molecular level. A given gene product may exhibit one or more molecular functions." [GOC:go_curators]
+comment: Note that, in addition to forming the root of the molecular function ontology, this term is recommended for use for the annotation of gene products whose molecular function is unknown. Note that when this term is used for annotation, it indicates that no information was available about the molecular function of the gene product annotated as of the date the annotation was made; the evidence code ND, no data, is used to indicate this.
+subset: goslim_candida
+subset: goslim_generic
+subset: goslim_goa
+subset: goslim_pir
+subset: goslim_plant
+subset: goslim_yeast
+subset: gosubset_prok
+synonym: "molecular function" EXACT []
+synonym: "molecular function unknown" NARROW []
+
+[Term]
+id: GO:0003723
+name: RNA binding
+namespace: molecular_function
+def: "Interacting selectively and non-covalently with an RNA molecule or a portion thereof." [GOC:mah]
+subset: goslim_candida
+subset: goslim_generic
+subset: goslim_plant
+subset: goslim_yeast
+subset: gosubset_prok
+xref: Reactome:1805 "RNA binding"
+is_a: GO:0003676 ! nucleic acid binding
+
+[Term]
+id: GO:0005488
+name: binding
+namespace: molecular_function
+def: "The selective, non-covalent, often stoichiometric, interaction of a molecule with one or more specific sites on another molecule." [GOC:ceb, GOC:mah, ISBN:0198506732 "Oxford Dictionary of Biochemistry and Molecular Biology"]
+comment: For ligands that bind to signal transducing receptors, consider the molecular function term 'receptor binding ; GO:0005102' and its children.
+subset: goslim_generic
+subset: goslim_goa
+subset: goslim_pir
+subset: goslim_plant
+subset: gosubset_prok
+synonym: "ligand" NARROW []
+xref: Wikipedia:Binding_(molecular)
+is_a: GO:0003674 ! molecular_function
+
+[Term]
+id: GO:0003735
+name: structural constituent of ribosome
+namespace: molecular_function
+alt_id: GO:0003736
+alt_id: GO:0003737
+alt_id: GO:0003738
+alt_id: GO:0003739
+alt_id: GO:0003740
+alt_id: GO:0003741
+alt_id: GO:0003742
+def: "The action of a molecule that contributes to the structural integrity of the ribosome." [GOC:mah]
+comment: Note that this term may be used to annotate ribosomal RNAs as well as ribosomal proteins.
+subset: gosubset_prok
+synonym: "ribosomal protein" BROAD []
+synonym: "ribosomal RNA" RELATED []
+is_a: GO:0005198 ! structural molecule activity
+
+[Term]
+id: GO:0005515
+name: protein binding
+namespace: molecular_function
+alt_id: GO:0045308
+def: "Interacting selectively and non-covalently with any protein or protein complex (a complex of two or more proteins that may include other nonprotein molecules)." [GOC:go_curators]
+subset: goslim_candida
+subset: goslim_generic
+subset: goslim_goa
+subset: goslim_pir
+subset: goslim_plant
+subset: goslim_yeast
+subset: gosubset_prok
+synonym: "alpha-2 macroglobulin receptor-associated protein activity" RELATED []
+synonym: "protein amino acid binding" EXACT []
+synonym: "protein degradation tagging activity" RELATED []
+synonym: "protein folding chaperone" NARROW [GOC:dph, GOC:mah, GOC:tb]
+synonym: "protein tagging activity" RELATED []
+xref: Reactome:6125 "protein binding"
+is_a: GO:0005488 ! binding

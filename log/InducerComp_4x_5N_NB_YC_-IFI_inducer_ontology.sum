@@ -1,0 +1,6 @@
+SUMMARY	InducerComp_4x_5N_NB_YC_-IFI
+VAR	inducer	ontology
+COL	mean AUC	std AUC	mean ROC20	std ROC20	mean ROC50	std ROC50	mean MCC	mean F1	mean ACC	mean SN	mean SP	mean PRE	mean REC	inducer	ontology
+DAT	0.79	0.01	0.63	0.43	0.50	0.00	0.58	0.57	0.90	0.41	0.99	0.93	0.41	AC  	BP|CC|MF
+DAT	0.68	0.01	0.74	0.36	0.61	0.18	0.23	0.34	0.80	0.32	0.89	0.37	0.32	AL  	BP|CC|MF
+DAT	0.83	0.01	0.84	0.37	0.87	0.28	0.40	0.50	0.75	0.75	0.75	0.38	0.75	ULCA	BP|CC|MF

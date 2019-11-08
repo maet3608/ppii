@@ -1,0 +1,65 @@
+remark:  DAG structure is as follows:
+remark:
+remark:                    1
+remark:                 /      \
+remark:             2             3 
+remark:           /   \       /  |  \
+remark:          4     5      6  7  8
+remark:          |  X  | 
+remark:         9      10
+remark:
+remark:
+
+
+[Term]
+id: GO:0000001
+name: cellular_component
+remark: root
+namespace: cellular_component
+
+[Term]
+id: GO:0000002
+namespace: cellular_component
+is_a: GO:0000001 
+
+[Term]
+id: GO:0000003
+namespace: cellular_component
+is_a: GO:0000001 
+
+[Term]
+id: GO:0000004
+namespace: cellular_component
+is_a: GO:0000002 
+
+[Term]
+id: GO:0000005
+namespace: cellular_component
+is_a: GO:0000002 
+
+[Term]
+id: GO:0000006
+namespace: cellular_component
+is_a: GO:0000003 
+
+[Term]
+id: GO:0000007
+namespace: cellular_component
+is_a: GO:0000003 
+
+[Term]
+id: GO:0000008
+namespace: cellular_component
+is_a: GO:0000003
+
+[Term]
+id: GO:0000009
+namespace: cellular_component
+is_a: GO:0000004 
+is_a: GO:0000005
+
+[Term]
+id: GO:0000010
+namespace: cellular_component
+is_a: GO:0000005 
+is_a: GO:0000004 

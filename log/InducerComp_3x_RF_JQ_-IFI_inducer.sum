@@ -1,0 +1,4 @@
+SUMMARY	InducerComp_3x_RF_JQ_-IFI
+VAR	inducer
+COL	mean AUC	std AUC	mean ROC20	std ROC20	mean ROC50	std ROC50	mean MCC	mean F1	mean ACC	mean SN	mean SP	mean PRE	mean REC	inducer
+DAT	0.89	0.13	0.97	0.18	0.73	0.53	0.62	0.82	0.81	0.86	0.76	0.78	0.86	ULCA

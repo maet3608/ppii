@@ -1,0 +1,458 @@
+Semantic Similarity measures
+
+
+Loading network...
+  Network: SC_string.txt
+  proteins: 3301  interactions pos:21096
+Annotate GO terms ...
+Create interaction set...
+  interactions: pos:0 neg:0
+Ontology molecular_function,  size: 1318
+running...
+Resnik-max      0.532
+Resnik-avg      0.532
+Resnik-bma      0.746
+Resnik-gen      0.739
+ULCA-max        0.536
+ULCA-avg        0.543
+ULCA-bma        0.715
+ULCA-gen        0.679
+OLCA-max        0.531
+OLCA-avg        0.531
+OLCA-bma        0.740
+OLCA-gen        0.666
+LCA-max         0.534
+LCA-avg         0.541
+LCA-bma         0.699
+LCA-gen         0.666
+Pesquita-max    0.524
+Pesquita-avg    0.527
+Pesquita-bma    0.710
+Pesquita-gen    0.735
+Schlicker-max   0.529
+Schlicker-avg   0.529
+Schlicker-bma   0.718
+Schlicker-gen   0.736
+finished.
+
+
+Loading network...
+  Network: SC_string.txt
+  proteins: 3301  interactions pos:21096
+Annotate GO terms ...
+Create interaction set...
+  interactions: pos:0 neg:0
+Ontology biological_process,  size: 2913
+running...
+Resnik-max      0.607
+Resnik-avg      0.604
+Resnik-bma      0.827
+Resnik-gen      0.809
+ULCA-max        0.585
+ULCA-avg        0.587
+ULCA-bma        0.801
+ULCA-gen        0.780
+OLCA-max        0.561
+OLCA-avg        0.569
+OLCA-bma        0.708
+OLCA-gen        0.653
+LCA-max         0.568
+LCA-avg         0.567
+LCA-bma         0.740
+LCA-gen         0.730
+Pesquita-max    0.606
+Pesquita-avg    0.609
+Pesquita-bma    0.836
+Pesquita-gen    0.826
+Schlicker-max   0.611
+Schlicker-avg   0.606
+Schlicker-bma   0.836
+Schlicker-gen   0.821
+
+
+Loading network...
+  Network: SC_string.txt
+  proteins: 3301  interactions pos:21096
+Annotate GO terms ...
+Create interaction set...
+  interactions: pos:0 neg:0
+Ontology cellular_component,  size: 745
+running...
+Resnik-max      0.556
+Resnik-avg      0.551
+Resnik-bma      0.855
+Resnik-gen      0.852
+ULCA-max        0.543
+ULCA-avg        0.540
+ULCA-bma        0.826
+ULCA-gen        0.778
+OLCA-max        0.538
+OLCA-avg        0.532
+OLCA-bma        0.807
+OLCA-gen        0.747
+LCA-max         0.538
+LCA-avg         0.537
+LCA-bma         0.847
+LCA-gen         0.753
+Pesquita-max    0.544
+Pesquita-avg    0.543
+Pesquita-bma    0.825
+Pesquita-gen    0.839
+Schlicker-max   0.552
+Schlicker-avg   0.549
+Schlicker-bma   0.848
+Schlicker-gen   0.853
+
+
+Loading network...
+  Network: SC_park.txt
+  proteins: 2152  interactions pos:3844
+Annotate GO terms ...
+Create interaction set...
+  interactions: pos:0 neg:0
+Ontology cellular_component,  size: 713
+running...
+SP-max          0.603
+SP-avg          0.596
+SP-bma          0.793
+SP-gen          0.627
+Jiang-max       0.556
+Jiang-avg       0.592
+Jiang-bma       0.612
+Jiang-gen       0.752
+Resnik-max      0.625
+Resnik-avg      0.617
+Resnik-bma      0.808
+Resnik-gen      0.806
+Lin-max         0.619
+Lin-avg         0.611
+Lin-bma         0.804
+Lin-gen         0.815
+Pesquita-max    0.617
+Pesquita-avg    0.614
+Pesquita-bma    0.797
+Pesquita-gen    0.802
+Gentleman-max   0.611
+Gentleman-avg   0.600
+Gentleman-bma   0.792
+Gentleman-gen   0.781
+Schlicker-max   0.621
+Schlicker-avg   0.616
+Schlicker-bma   0.815
+Schlicker-gen   0.817
+
+
+Loading network...
+  Network: SC_park.txt
+  proteins: 2152  interactions pos:3844
+Annotate GO terms ...
+Create interaction set...
+  interactions: pos:0 neg:0
+Ontology biological_process,  size: 2650
+running...
+SP-max          0.685
+SP-avg          0.676
+SP-bma          0.838
+SP-gen          0.654
+Jiang-max       0.571
+Jiang-avg       0.643
+Jiang-bma       0.614
+Jiang-gen       0.743
+Resnik-max      0.706
+Resnik-avg      0.688
+Resnik-bma      0.821
+Resnik-gen      0.823
+Lin-max         0.703
+Lin-avg         0.682
+Lin-bma         0.816
+Lin-gen         0.821
+Pesquita-max    0.700
+Pesquita-avg    0.693
+Pesquita-bma    0.818
+Pesquita-gen    0.816
+Gentleman-max   0.691
+Gentleman-avg   0.680
+Gentleman-bma   0.824
+Gentleman-gen   0.806
+Schlicker-max   0.704
+Schlicker-avg   0.687
+Schlicker-bma   0.818
+Schlicker-gen   0.821
+
+
+Loading network...
+  Network: SC_park.txt
+  proteins: 2152  interactions pos:3844
+Annotate GO terms ...
+Create interaction set...
+  interactions: pos:0 neg:0
+Ontology molecular_function,  size: 1081
+running...
+SP-max          0.530
+SP-avg          0.532
+SP-bma          0.674
+SP-gen          0.542
+Jiang-max       0.534
+Jiang-avg       0.541
+Jiang-bma       0.542
+Jiang-gen       0.596
+Resnik-max      0.531
+Resnik-avg      0.531
+Resnik-bma      0.712
+Resnik-gen      0.692
+Lin-max         0.523
+Lin-avg         0.523
+Lin-bma         0.687
+Lin-gen         0.702
+Pesquita-max    0.523
+Pesquita-avg    0.523
+Pesquita-bma    0.678
+Pesquita-gen    0.706
+Gentleman-max   0.529
+Gentleman-avg   0.530
+Gentleman-bma   0.681
+Gentleman-gen   0.681
+Schlicker-max   0.525
+Schlicker-avg   0.524
+Schlicker-bma   0.694
+Schlicker-gen   0.703
+
+
+
+
+
+Loading network...
+  Network: SC_string.txt
+  proteins: 3301  interactions pos:21096
+Annotate GO terms ...
+Create interaction set...
+  interactions: pos:0 neg:0
+Ontology cellular_component,  size: 745
+running...
+SP-max          0.528
+SP-avg          0.525
+SP-bma          0.796
+SP-gen          0.692
+Jiang-max       0.513
+Jiang-avg       0.536
+Jiang-bma       0.749
+Jiang-gen       0.828
+Resnik-max      0.556
+Resnik-avg      0.551
+Resnik-bma      0.855
+Resnik-gen      0.852
+Lin-max         0.549
+Lin-avg         0.545
+Lin-bma         0.831
+Lin-gen         0.848
+Pesquita-max    0.544
+Pesquita-avg    0.543
+Pesquita-bma    0.825
+Pesquita-gen    0.839
+Gentleman-max   0.535
+Gentleman-avg   0.530
+Gentleman-bma   0.814
+Gentleman-gen   0.816
+Schlicker-max   0.552
+Schlicker-avg   0.549
+Schlicker-bma   0.848
+Schlicker-gen   0.853
+
+
+
+Loading network...
+  Network: SC_string.txt
+  proteins: 3301  interactions pos:21096
+Annotate GO terms ...
+Create interaction set...
+  interactions: pos:0 neg:0
+Ontology biological_process,  size: 2913
+running...
+SP-max          0.599
+SP-avg          0.604
+SP-bma          0.883
+SP-gen          0.660
+Jiang-max       0.538
+Jiang-avg       0.570
+Jiang-bma       0.673
+Jiang-gen       0.656
+Resnik-max      0.607
+Resnik-avg      0.604
+Resnik-bma      0.827
+Resnik-gen      0.809
+Lin-max         0.611
+Lin-avg         0.604
+Lin-bma         0.836
+Lin-gen         0.821
+Pesquita-max    0.606
+Pesquita-avg    0.609
+Pesquita-bma    0.836
+Pesquita-gen    0.826
+Gentleman-max   0.593
+Gentleman-avg   0.594
+Gentleman-bma   0.837
+Gentleman-gen   0.826
+Schlicker-max   0.611
+Schlicker-avg   0.606
+Schlicker-bma   0.836
+Schlicker-gen   0.821
+
+
+
+
+Loading network...
+  Network: SC_string.txt
+  proteins: 3301  interactions pos:21096
+Annotate GO terms ...
+Create interaction set...
+  interactions: pos:0 neg:0
+Ontology molecular_function,  size: 1318
+running...
+SP-max          0.530
+SP-avg          0.541
+SP-bma          0.713
+SP-gen          0.592
+Jiang-max       0.508
+Jiang-avg       0.511
+Jiang-bma       0.538
+Jiang-gen       0.582
+Resnik-max      0.532
+Resnik-avg      0.532
+Resnik-bma      0.746
+Resnik-gen      0.739
+Lin-max         0.521
+Lin-avg         0.527
+Lin-bma         0.703
+Lin-gen         0.734
+Pesquita-max    0.524
+Pesquita-avg    0.527
+Pesquita-bma    0.710
+Pesquita-gen    0.735
+Gentleman-max   0.528
+Gentleman-avg   0.536
+Gentleman-bma   0.719
+Gentleman-gen   0.722
+Schlicker-max   0.529
+Schlicker-avg   0.529
+Schlicker-bma   0.718
+Schlicker-gen   0.736
+
+
+Loading network...
+  Network: HS_string.txt
+  proteins: 3102  interactions pos:15049
+Annotate GO terms ...
+Create interaction set...
+  interactions: pos:0 neg:0
+Ontology cellular_component,  size: 804
+running...
+SP-max          0.560
+SP-avg          0.565
+SP-bma          0.775
+SP-gen          0.650
+Jiang-max       0.541
+Jiang-avg       0.561
+Jiang-bma       0.663
+Jiang-gen       0.733
+Resnik-max      0.592
+Resnik-avg      0.591
+Resnik-bma      0.807
+Resnik-gen      0.803
+Lin-max         0.588
+Lin-avg         0.590
+Lin-bma         0.806
+Lin-gen         0.813
+Pesquita-max    0.586
+Pesquita-avg    0.590
+Pesquita-bma    0.791
+Pesquita-gen    0.804
+Gentleman-max   0.573
+Gentleman-avg   0.577
+Gentleman-bma   0.793
+Gentleman-gen   0.796
+Schlicker-max   0.589
+Schlicker-avg   0.591
+Schlicker-bma   0.811
+Schlicker-gen   0.813
+finished.
+
+
+Loading network...
+  Network: HS_string.txt
+  proteins: 3102  interactions pos:15049
+Annotate GO terms ...
+Create interaction set...
+  interactions: pos:0 neg:0
+Ontology molecular_function,  size: 1705
+running...
+SP-max          0.610
+SP-avg          0.603
+SP-bma          0.757
+SP-gen          0.594
+Jiang-max       0.526
+Jiang-avg       0.551
+Jiang-bma       0.525
+Jiang-gen       0.677
+Resnik-max      0.611
+Resnik-avg      0.609
+Resnik-bma      0.779
+Resnik-gen      0.772
+Lin-max         0.618
+Lin-avg         0.610
+Lin-bma         0.779
+Lin-gen         0.773
+Pesquita-max    0.617
+Pesquita-avg    0.614
+Pesquita-bma    0.773
+Pesquita-gen    0.776
+Gentleman-max   0.617
+Gentleman-avg   0.611
+Gentleman-bma   0.773
+Gentleman-gen   0.755
+Schlicker-max   0.617
+Schlicker-avg   0.612
+Schlicker-bma   0.785
+Schlicker-gen   0.773
+finished.
+
+
+
+Loading network...
+  Network: HS_string.txt
+  proteins: 3102  interactions pos:15049
+Annotate GO terms ...
+Create interaction set...
+  interactions: pos:0 neg:0
+Ontology biological_process,  size: 5545
+running...
+SP-max          0.623
+SP-avg          0.613
+SP-bma          0.823
+SP-gen          0.612
+Jiang-max       0.546
+Jiang-avg       0.593
+Jiang-bma       0.634
+Jiang-gen       0.662
+Resnik-max      0.647
+Resnik-avg      0.637
+Resnik-bma      0.817
+Resnik-gen      0.816
+Lin-max         0.647
+Lin-avg         0.636
+Lin-bma         0.815
+Lin-gen         0.802
+Pesquita-max    0.645
+Pesquita-avg    0.645
+Pesquita-bma    0.815
+Pesquita-gen    0.806
+Gentleman-max   0.632
+Gentleman-avg   0.629
+Gentleman-bma   0.834
+Gentleman-gen   0.807
+Schlicker-max   0.647
+Schlicker-avg   0.637
+Schlicker-bma   0.816
+Schlicker-gen   0.803
+
+
+

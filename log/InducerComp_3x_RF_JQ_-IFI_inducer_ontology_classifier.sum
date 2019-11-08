@@ -1,0 +1,5 @@
+SUMMARY	InducerComp_3x_RF_JQ_-IFI
+VAR	inducer	ontology	classifier
+COL	mean AUC	std AUC	mean ROC20	std ROC20	mean ROC50	std ROC50	mean MCC	mean F1	mean ACC	mean SN	mean SP	mean PRE	mean REC	inducer	ontology	classifier
+DAT	1.00	0.00	1.00	0.00	1.00	0.00	0.00	0.00	1.00	0.00	1.00	0.00	0.00	ULCA	BP|CC|MF	NB   
+DAT	1.00	0.00	1.00	0.00	1.00	0.00	0.00	0.00	1.00	0.00	1.00	0.00	0.00	ULCA	BP|CC|MF	RF   

@@ -1,0 +1,155 @@
+
+
+         Loading network...
+           Network: EC_string.txt
+           proteins: 787  interaction 1731
+         Annotate interpro domains
+         Create interaction set...
+           interactions: 3462
+         Interpro tree,  size: 706
+         running...
+         DomainEncoding:
+         SUMMARY: encoding, ontology, classifier
+           AUC|mean:std
+           0.52  0.06 :	 AC   Domain  NB
+           0.51  0.02 :	 AC   Domain  RF3
+           0.73  0.05 :	 AL   Domain  NB
+           0.78  0.07 :	 AL   Domain  RF3
+         SUMMARY: classifier
+           AUC|mean:std
+           0.62  0.49 :	 NB
+           0.64  0.60 :	 RF3
+         SUMMARY: encoding
+           AUC|mean:std
+           0.51  0.06 :	 AC
+           0.75  0.14 :	 AL
+         SUMMARY: ontology
+           AUC|mean:std
+           0.63  0.77 :	 Domain
+         finished.
+
+
+         Loading network...
+           Network: EC_string.txt
+           proteins: 787  interaction 1731
+         Annotate phylogenetic profiles ...
+           data/ecoli.profile
+         Create interaction set...
+           interactions: 3462
+         Phylogentic tree,  size: 1350
+         running...
+         PhyloEncoding:
+         SUMMARY: encoding, ontology, classifier
+           AUC|mean:std
+           0.61  0.12 :	 AC   PHYLO  NB
+           0.63  0.17 :	 AL   PHYLO  NB
+           0.64  0.11 :	 SPS  PHYLO  NB
+           0.61  0.12 :	 ULCA PHYLO  NB
+         SUMMARY: classifier
+           AUC|mean:std
+           0.62  0.28 :	 NB
+         SUMMARY: encoding
+           AUC|mean:std
+           0.61  0.12 :	 AC
+           0.63  0.17 :	 AL
+           0.64  0.11 :	 SPS
+           0.61  0.12 :	 ULCA
+         SUMMARY: ontology
+           AUC|mean:std
+           0.62  0.28 :	 PHYLO
+         finished.
+
+Loading network...
+  Network: SC_string.txt
+  proteins: 3301  interaction 21096
+Annotate phylogenetic profiles ...
+  f:/PPII/Data/PhyloProfiles/saccharomyces.profile
+Create interaction set...
+  interactions: 2000
+Phylogentic tree,  size: 648
+running...
+PhyloEncoding:
+SUMMARY: encoding, ontology, classifier
+  AUC|mean:std
+  0.63  0.11 :	 AC   PHYLO  NB
+  0.66  0.15 :	 AL   PHYLO  NB
+  0.62  0.16 :	 SPS  PHYLO  NB
+  0.60  0.14 :	 ULCA PHYLO  NB
+SUMMARY: classifier
+  AUC|mean:std
+  0.63  0.31 :	 NB
+SUMMARY: encoding
+  AUC|mean:std
+  0.63  0.11 :	 AC
+  0.66  0.15 :	 AL
+  0.62  0.16 :	 SPS
+  0.60  0.14 :	 ULCA
+SUMMARY: ontology
+  AUC|mean:std
+  0.63  0.31 :	 PHYLO
+finished.
+
+
+Section size = 5000
+WrappedArray(Loading network...)
+  Network: SC_park.txt
+  proteins: 2152  interaction 3844
+Annotate phylogenetic profiles ...
+  data/yeast.loci
+WrappedArray(Create interaction set...)
+  interactions: 7688
+Locus graph,  size: 2381
+SUMMARY: encoding, ontology, classifier
+  AUC|mean:std
+  0.51  0.03 :	 AC   LOCI  NB
+  0.60  0.06 :	 AL   LOCI  NB
+  0.57  0.06 :	 SPS  LOCI  NB
+
+
+Loading network...
+  Network: SC_park.txt
+  proteins: 2152  interaction 3844
+Annotate phylogenetic profiles ...
+  f:/PPII/Data/PhyloProfiles/saccharomyces.profile
+Create interaction set...
+  interactions: 7688
+Phylogentic tree,  size: 648
+running...
+PhyloEncoding:
+SUMMARY: encoding, ontology, classifier
+  AUC|mean:std
+  0.58  0.06 :	 AC   PHYLO  NB
+  0.55  0.07 :	 AL   PHYLO  NB
+  0.56  0.03 :	 ULCA PHYLO  NB
+
+
+Loading network...
+  Network: SC_park.txt
+  proteins: 2152  interaction 3844
+Annotate EC numbers ...
+  Create interaction set...
+  interactions: 7688
+Enzymes tree,  size: 339
+running...
+ECEncoding:
+SUMMARY: encoding, ontology, classifier
+  AUC|mean:std
+  0.57  0.04 :	 AC   ENZYME  NB
+  0.55  0.05 :	 AL   ENZYME  NB
+  0.60  0.02 :	 SPA  ENZYME  NB
+  0.59  0.05 :	 SPS  ENZYME  NB
+  0.59  0.06 :	 ULCA ENZYME  NB
+SUMMARY: classifier
+  AUC|mean:std
+  0.58  0.17 :	 NB
+SUMMARY: encoding
+  AUC|mean:std
+  0.57  0.04 :	 AC
+  0.55  0.05 :	 AL
+  0.60  0.02 :	 SPA
+  0.59  0.05 :	 SPS
+  0.59  0.06 :	 ULCA
+SUMMARY: ontology
+  AUC|mean:std
+  0.58  0.17 :	 ENZYME
+
